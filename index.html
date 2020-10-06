@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/541ebc2f3e.js" crossorigin="anonymous"></script>
+    <title>Maison Fleurie</title>
+</head>
+<body>
+    <header>
+        <nav class="navLinks">
+            <ul>
+                <li class="navItem"><a href="#" class="link">HOME</a></li>
+                <li class="navItem"><a href="#" class="link">CONTACT</a></li>
+            </ul>
+        </nav>
+        <h1>Maison Fleurie</h1>
+        <nav class="navLinks">
+            <ul>
+                <li class="navItem"><a href="#" class="link">LOGIN</a></li>
+                <li class="navItem"><a href="#" class="link">REGISTER</a></li>
+                <li class="navItem"><a href="#" class="link"><i class="fas fa-shopping-basket fa-lg"></i></a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="navbar">
+        <nav class="navLinks">
+            <ul>
+                <li class="navItem"><a href="#" class="link">NECKLACES</a></li>
+                <li class="navItem"><a href="#" class="link">EARRINGS</a></li>
+                <li class="navItem"><a href="#" class="link">BRACELETS</a></li>
+                <li class="navItem"><a href="#" class="link">BAGS</a></li>
+                <li class="navItem"><a href="#" class="link">OTHER</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <div class="slideshow-container">
+            <!-- Slideshow images -->
+            <div class="banner-slide fade">
+                <img class="banner-img" id="img1" src="assets/banner/pexels-tim-savage-2010995.jpg">
+            </div>
+            <div class="banner-slide fade">
+                <img class="banner-img" id="img2"  src="assets/banner/pexels-photo-1191531.webp">
+            </div>
+            <div class="banner-slide fade">
+                <img class="banner-img" id="img3"  src="assets/banner/pexels-photo-1306262.jpeg">
+            </div>
+
+            <!-- Next/Previous Buttons -->
+            <a class="prev" onclick="changeSlides(-1)"><i class="fas fa-angle-left fa-lg"></i></a>
+            <a class="next" onclick="changeSlides(1)"><i class="fas fa-angle-right fa-lg"></i></a>
+
+            <!-- Slide indicator dots -->
+            <div>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div> 
+        </div>  
+    </div>
+
+    <div class="categories">
+        <div class="category-link" id="jewellery-all">
+          <h2>JEWELLERY ALL</h2>
+
+        </div>    
+        <div class="category-link"  id="mens">
+            <h2>MENS</h2>
+
+        </div>  
+        <div class="category-link"  id="accessories">
+            <h2>ACCESSORIES</h2>
+
+        </div>    
+        <div class="category-link"  id="other">
+            <h2>OTHER</h2>
+        </div>    
+
+    </div>
+
+    <div class="newsletter">
+        <h3>SUBSCRIBE TO OUR NEWSLETTER AND GET 10% OFF YOUR FIRST ORDER!</h3>
+        <form class="signup-form">
+            <div class="set">
+                <input type="email" name="email" id="email" placeholder="EMAIL">
+                <input type="name" name="name" id="name" placeholder="NAME">
+            </div>
+            <div class="set">
+                <p>Let us know your birthday and we'll send you a treat on your special day <span>(optional)</span></p>
+                <input type="date" name="dob" id="dob">
+            </div>
+                <button type="submit" name="submit" id="submit">SUBSCRIBE</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <nav class="navLinks">
+                <ul>
+                    <li class="navItem"><a href="#" class="link">Contact</a></li>
+                    <li class="navItem"><a href="#" class="link">FAQ</a></li>
+                    <li class="navItem"><a href="#" class="link">Delivery & Payment Info</a></li>
+                    <li class="navItem"><a href="#" class="link">Care Instructions</a></li>
+                    <li class="navItem"><a href="#" class="link">Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="slideshow.js"></script>
+</body>
+</html>
