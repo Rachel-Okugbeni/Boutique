@@ -1,0 +1,42 @@
+.main-content {
+    display: flex;
+}
+
+.sub-category {
+    left: 0;
+    height: auto;
+    background: $primary-color;
+     nav {
+         li {
+             display: block;
+             text-align: left;
+         }
+     }
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 20px;
+}
+.product {
+    width: 250px;
+    height: 350px;
+    margin: 10px 30px;
+    line-height: 10px;
+    img {
+        border-radius: 5px;
+    }
+    .viewProduct {
+        background-color: $primary-color;
+        text-decoration: none;
+        color: $font-color;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 5px 0;
+        &:hover {
+            background-color: darken($primary-color, 10%);
+        }
+    }
+}
