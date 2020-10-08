@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="#">LOGIN</a></li>
                 <li><a href="#">REGISTER</a></li>
-                <li><a href="#"><i class="fas fa-shopping-basket fa-lg"></i></a></li>
+                <li><a href="#"><i class="fas fa-shopping-basket fa-lg"></i> <span>0</span></a></li>
 
             </ul>
         </nav>
@@ -41,14 +41,17 @@
         <div class="sub-category">
             <nav>
                 <ul>
-                    <li><a href="#">Jewellery All</a></li>
-                    <li><a href="#">Necklaces</a></li>
-                    <li><a href="#">Earrings</a></li>
-                    <li><a href="#">Bracelets</a></li>
+                    <li class="jewellery-all" onclick="showAll">Jewellery All</li>
+                    <li class="necklaces" onclick="showNecklaces">Necklaces</li>
+                    <li class="earrings" onclick="showEarrings">Earrings</li>
+                    <li class="bracelets" onclick="showBracelets">Bracelets</li>
                 </ul>
             </nav>
         </div>
         <div class="product-list">
+
+        <!-- Necklaces -->
+
             <div class="product jewellery necklace" id="bead-choker">
                 <img src="assets/jewellery/Necklace/Bead Choker/BeadChoker_Small.jpg">
                 <p class="description">Bead Choker</p>
@@ -115,76 +118,119 @@
                 <p class="price">£10.00</p>
                 <a href="" class="viewProduct">View Product</a>
             </div>
-            <div class="product jewellery necklace" id="bead-choker">
+
+            <!-- Bracelets -->
+
+            <div class="product jewellery bracelet" id="bead-choker">
                 <img src="assets/jewellery/Bracelet/Anchor Bracelet/nautical.charm.bracelet_small.jpg">
                 <p class="description">Bead Choker</p>
                 <p class="price">£10.00</p>
                 <a href="" class="viewProduct">View Product</a>
             </div>
-            <div class="product jewellery necklace" id="bead-choker">
+            <div class="product jewellery bracelet" id="bead-choker">
                 <img src="assets/jewellery/Bracelet/embroidered bangle/embroidered.bracelet_small.jpg">
                 <p class="description">Bead Choker</p>
                 <p class="price">£10.00</p>
                 <a href="" class="viewProduct">View Product</a>
             </div>
-            <div class="product jewellery necklace" id="bead-choker">
+            <div class="product jewellery bracelet" id="bead-choker">
                 <img src="assets/jewellery/Bracelet/feather bracelet/bangle.bracelet.with.feathers_small.jpg">
                 <p class="description">Bead Choker</p>
                 <p class="price">£10.00</p>
                 <a href="" class="viewProduct">View Product</a>
             </div>
-            <div class="product jewellery necklace" id="bead-choker">
+            <div class="product jewellery bracelet" id="bead-choker">
                 <img src="assets/jewellery/Bracelet/gold arrow bracelet/gold.arrow.bracelet_small.jpg">
                 <p class="description">Bead Choker</p>
                 <p class="price">£10.00</p>
                 <a href="" class="viewProduct">View Product</a>
             </div>
-            <div class="product jewellery necklace" id="bead-choker">
+            <div class="product jewellery bracelet" id="bead-choker">
                 <img src="assets/jewellery/Bracelet/jewel bangle/bangle.bracelet.with.jewels_small.jpg">
                 <p class="description">Bead Choker</p>
                 <p class="price">£10.00</p>
                 <a href="" class="viewProduct">View Product</a>
             </div>
-            <div class="product jewellery necklace" id="bead-choker">
+            <div class="product jewellery bracelet" id="bead-choker">
                 <img src="assets/jewellery/Bracelet/Moon Bracelet/moon.friendship.bracelet_small.jpg">
                 <p class="description">Bead Choker</p>
                 <p class="price">£10.00</p>
                 <a href="" class="viewProduct">View Product</a>
             </div>
-            <div class="product jewellery necklace" id="bead-choker">
+            <div class="product jewellery bracelet" id="bead-choker">
                 <img src="assets/jewellery/Bracelet/patterned bangle/patterned.bangle_small.jpg">
                 <p class="description">Bead Choker</p>
                 <p class="price">£10.00</p>
                 <a href="" class="viewProduct">View Product</a>
             </div>
-            <div class="product jewellery necklace" id="bead-choker">
+            <div class="product jewellery bracelet" id="bead-choker">
                 <img src="assets/jewellery/Bracelet/simple gold bracelet/simple.gold.bracelet_small.jpg">
                 <p class="description">Bead Choker</p>
                 <p class="price">£10.00</p>
                 <a href="" class="viewProduct">View Product</a>
             </div>
-            <div class="product jewellery necklace" id="bead-choker">
+            <div class="product jewellery bracelet" id="bead-choker">
                 <img src="assets/jewellery/Bracelet/star bracelet/sun.friendship.bracelet_small.jpg">
                 <p class="description">Bead Choker</p>
                 <p class="price">£10.00</p>
                 <a href="" class="viewProduct">View Product</a>
             </div>
+
+            <!-- Earrings -->
+
+            <div class="product jewellery earring" id="bead-choker">
+                <img src="assets/jewellery/Earring/Boho Earrings/boho.earrings_small.jpg">
+                <p class="description">Bead Choker</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery earring" id="bead-choker">
+                <img src="assets/jewellery/Earring/Elephant Earrings/elephant.earrings_small.jpg">
+                <p class="description">Bead Choker</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery earring" id="bead-choker">
+                <img src="assets/jewellery/Earring/Galaxy Earrings/galaxy.earrings_small.jpg">
+                <p class="description">Bead Choker</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery earring" id="bead-choker">
+                <img src="assets/jewellery/Earring/Guardian Angel Earrings/guardian.angel.earrings_small.jpg">
+                <p class="description">Bead Choker</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery earring" id="bead-choker">
+                <img src="assets/jewellery/Earring/Marble Earrings/marble.stud.earrings_small.jpg">
+                <p class="description">Bead Choker</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <!-- Mens -->
+            <div class="product jewellery mens" id="bead-choker">
+                <img src="assets/jewellery/Mens/anchor.bracelet.for.men.jpg">
+                <p class="description">Bead Choker</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery mens" id="bead-choker">
+                <img src="assets/jewellery/Mens/black.buddha.bracelet.jpg">
+                <p class="description">Bead Choker</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery mens" id="bead-choker">
+                <img src="assets/jewellery/Mens/chakra.bracelet.jpg">
+                <p class="description">Bead Choker</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
         </div>
-        
-      
-
-
-
-
     </div>
 
-
-
-
-
-
-
-    <!-- <footer>
+    <footer>
         <div class="footer-links">
             <nav>
                 <ul>
@@ -196,6 +242,6 @@
                 </ul>
             </nav>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>
