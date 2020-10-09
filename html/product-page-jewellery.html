@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/541ebc2f3e.js" crossorigin="anonymous"></script>
+    <title>Maison Fleurie</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <h1>Maison Fleurie</h1>
+        <nav >
+            <ul>
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">REGISTER</a></li>
+                <li><a href="#"><i class="fas fa-shopping-basket fa-lg"></i> <span>0</span></a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">NECKLACES</a></li>
+                <li><a href="#">EARRINGS</a></li>
+                <li><a href="#">BRACELETS</a></li>
+                <li><a href="#">MENS</a></li>
+                <li><a href="#">BAGS</a></li>
+                <li><a href="#">OTHER</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <div class="sub-category">
+            <nav>
+                <ul>
+                    <li class="jewellery-all" onclick="showAll()">Jewellery All</li>
+                    <li class="necklaces" onclick="filterProduct(necklaces)">Necklaces</li>
+                    <li class="earrings" onclick="filterProduct(earrings)">Earrings</li>
+                    <li class="bracelets" onclick="filterProduct(bracelets)">Bracelets</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="product-list">
+
+        <!-- Necklaces -->    
+            <div class="product jewellery necklace" id="bird-necklace">
+                <img src="/assets/jewellery/Necklace/Bird Necklace/bird.necklace_small.jpg">
+                <p class="description">Gold Bird Necklace</p>
+                <p class="price">£15.00</p>
+                <a href="/html/productpages/bird-necklace.html" class="viewProduct">View Product</a>
+            </div>
+            
+            <div class="product jewellery necklace" id="gold-chain">
+                <img src="/assets/jewellery/Necklace/gold chain/delicate.gold.chain_small.jpg">
+                <p class="description">Gold Hoop Necklace</p>
+                <p class="price">£15.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery necklace" id="gem-necklace">
+                <img src="/assets/jewellery/Necklace/Crystal Necklace/gemstone-necklace_small.jpg">
+                <p class="description">Blue Gemstone Necklace</p>
+                <p class="price">£15.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery necklace" id="gold-layered-chain">
+                <img src="/assets/jewellery/Necklace/gold necklace/dainty.gold.necklace_small.jpg">
+                <p class="description">Gold Layered Necklace</p>
+                <p class="price">£18.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+           
+            <div class="product jewellery necklace" id="gold-blue-layered-choker">
+                <img src="/assets/jewellery/Necklace/Layered Necklace/pretty.gold.necklace_small.jpg">
+                <p class="description">Beaded Layered Necklace</p>
+                <p class="price">£12.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery necklace" id="origami-necklace">
+                <img src="/assets/jewellery/Necklace/Origami Necklace/origami.crane.necklace_small.jpg">
+                <p class="description">Silver Origami Crane Necklace</p>
+                <p class="price">£15.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery necklace" id="thread-necklace">
+                <img src="/assets/jewellery/Necklace/Silver Thread Choker/silver.threader.necklace_small.jpg">
+                <p class="description">Silver Thread Necklace</p>
+                <p class="price">£15.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery necklace" id="leather-choker">
+                <img src="/assets/jewellery/Necklace/Leather Choker/black-leather-choker-necklace_small.jpg">
+                <p class="description">Leather Choker</p>
+                <p class="price">£12.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery necklace" id="lace-choker">
+                <img src="/assets/jewellery/Necklace/Lace Choker/dainty-choker-necklace_small.jpg">
+                <p class="description">Black Lace Choker</p>
+                <p class="price">£12.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>  
+            <div class="product jewellery necklace"id="bead-choker">
+                <img src="/assets/jewellery/Necklace/Bead Choker/BeadChoker_Small.jpg">
+                <p class="description">Bead Choker</p>
+                <p class="price">£8.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery necklace" id="triangle-choker">
+                <img src="/assets/jewellery/Necklace/Triangle Choker/layered.choker.necklace_small.jpg">
+                <p class="description">Layered Triangle Choker</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+
+            <!-- Bracelets -->
+
+            <div class="product jewellery bracelet" id="anchor-bracelet">
+                <img src="/assets/jewellery/Bracelet/Anchor Bracelet/nautical.charm.bracelet_small.jpg">
+                <p class="description">Gold Anchor Bracelet</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery bracelet" id="sun-bracelet">
+                <img src="/assets/jewellery/Bracelet/star bracelet/sun.friendship.bracelet_small.jpg">
+                <p class="description">Gold Sun Bracelet</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery bracelet" id="moon-bracelet">
+                <img src="/assets/jewellery/Bracelet/Moon Bracelet/moon.friendship.bracelet_small.jpg">
+                <p class="description">Gold Moon Bracelet</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery bracelet" id="feather-bracelet">
+                <img src="/assets/jewellery/Bracelet/feather bracelet/bangle.bracelet.with.feathers_small.jpg">
+                <p class="description">Gold Boho Feather Bracelet</p>
+                <p class="price">£12.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery bracelet" id="arrow-bracelet">
+                <img src="/assets/jewellery/Bracelet/gold arrow bracelet/gold.arrow.bracelet_small.jpg">
+                <p class="description">Gold Arrow Bangle</p>
+                <p class="price">£8.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery bracelet" id="embroidered-bangle">
+                <img src="/assets/jewellery/Bracelet/embroidered bangle/embroidered.bracelet_small.jpg">
+                <p class="description">Embroidered Bangle</p>
+                <p class="price">£6.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery bracelet" id="jewel-bangle">
+                <img src="/assets/jewellery/Bracelet/jewel bangle/bangle.bracelet.with.jewels_small.jpg">
+                <p class="description">Gold Jewel Bangle</p>
+                <p class="price">£8.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery bracelet" id="patterned-bangle">
+                <img src="/assets/jewellery/Bracelet/patterned bangle/patterned.bangle_small.jpg">
+                <p class="description">Gold Thick Boho Bangle</p>
+                <p class="price">£8.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery bracelet" id="gold-bangle">
+                <img src="/assets/jewellery/Bracelet/simple gold bracelet/simple.gold.bracelet_small.jpg">
+                <p class="description">Gold Plain Bangle</p>
+                <p class="price">£4.50</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            
+
+            <!-- Earrings -->
+
+            <div class="product jewellery earring" id="boho-earrings">
+                <img src="/assets/jewellery/Earring/Boho Earrings/boho.earrings_small.jpg">
+                <p class="description">Blue Marbled Boho Earrings</p>
+                <p class="price">£15.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery earring" id="elephant-earrings">
+                <img src="/assets/jewellery/Earring/Elephant Earrings/elephant.earrings_small.jpg">
+                <p class="description">Gold Elephant Studs</p>
+                <p class="price">£6.50</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery earring" id="galaxy-earrings">
+                <img src="/assets/jewellery/Earring/Galaxy Earrings/galaxy.earrings_small.jpg">
+                <p class="description">Silver Galaxy Earrings</p>
+                <p class="price">£12.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery earring" id="angel-earrings">
+                <img src="/assets/jewellery/Earring/Guardian Angel Earrings/guardian.angel.earrings_small.jpg">
+                <p class="description">Silver Guardian Angel Studs</p>
+                <p class="price">£8.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery earring" id="marble-earrings">
+                <img src="/assets/jewellery/Earring/Marble Earrings/marble.stud.earrings_small.jpg">
+                <p class="description">Silver Marble Studs</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <!-- Mens
+            <div class="product jewellery mens" id="bead-choker">
+                <img src="assets/jewellery/Mens/anchor.bracelet.for.men.jpg">
+                <p class="description">Bead Choker</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery mens" id="bead-choker">
+                <img src="assets/jewellery/Mens/black.buddha.bracelet.jpg">
+                <p class="description">Bead Choker</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div>
+            <div class="product jewellery mens" id="bead-choker">
+                <img src="assets/jewellery/Mens/chakra.bracelet.jpg">
+                <p class="description">Bead Choker</p>
+                <p class="price">£10.00</p>
+                <a href="" class="viewProduct">View Product</a>
+            </div> -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <nav>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Delivery & Payment Info</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="/js/product-filter.js"></script>
+</body>
+</html>

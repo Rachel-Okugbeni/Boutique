@@ -204,7 +204,7 @@ nav a:hover {
 }
 
 #jewellery-all {
-  background-image: url("/assets/jewellery/Bracelet/boho-bangle-bracelet.jpg");
+  background-image: url("/assets/jewellery/Bracelet/feather bracelet/bangle-bracelet-with-feathers.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -216,7 +216,7 @@ nav a:hover {
 }
 
 #mens {
-  background-image: url("/assets/jewellery/Mens/chakra-bracelet.jpg");
+  background-image: url("/assets/jewellery/Mens/Anchor Bracelet/anchor-bracelet-for-men.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -284,6 +284,11 @@ nav a:hover {
 .sub-category nav li {
   display: block;
   text-align: left;
+}
+
+.sub-category nav li:hover {
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .product-list {

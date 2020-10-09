@@ -9,6 +9,10 @@
          li {
              display: block;
              text-align: left;
+             &:hover {
+                 font-weight: bold;
+                 cursor: pointer;
+             }
          }
      }
 }
