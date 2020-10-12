@@ -29,6 +29,11 @@ footer {
     padding: 5px 10px;
     font-size: 0.9rem;
 }
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 h1 {
     font-family: $serif-font;
@@ -61,6 +66,7 @@ nav {
 .banner {
     display: flex;
     justify-content: center;
+    margin: 10px 0;
 }
 .slideshow-container {
     position: relative;
@@ -81,7 +87,9 @@ nav {
     align-items: center;
 }
 .prev,
-.next {
+.next,
+.prevImage,
+.nextImage {
     cursor: pointer;
     padding: 5px;
     color: $primary-color;
