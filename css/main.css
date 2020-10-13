@@ -14,8 +14,8 @@ body {
           box-sizing: border-box;
 }
 
-header,
-footer {
+main-header,
+main-footer {
   background-color: #EDDCD2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,12 +25,6 @@ footer {
           justify-content: space-between;
   padding: 5px 10px;
   font-size: 0.9rem;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 h1 {
@@ -211,7 +205,6 @@ nav a:hover {
 
 .category-link:hover {
   opacity: 0.6;
-  cursor: pointer;
 }
 
 #jewellery-all {
@@ -278,7 +271,6 @@ nav a:hover {
 
 .signup-form #submit:hover {
   background-color: #dec0ae;
-  cursor: pointer;
 }
 
 .main-content {
@@ -338,6 +330,7 @@ nav a:hover {
   background-color: #dec0ae;
 }
 
+/* PRODUCT PAGE - DESCRIPTION/ADD TO BASKET */
 .product-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,4 +360,39 @@ nav a:hover {
   height: 55vh;
   border-radius: 5px;
   background-color: #EDDCD2;
+}
+
+/* BACK TO CATEGORY LINK*/
+.backLink {
+  display: inline-block;
+  width: 100px;
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+/*QUANTITY SELECTOR*/
+.quantity {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: #F0EFEB;
+  text-align: inherit;
+  width: 35px;
+}
+
+/* ADD TO BASKET BUTTON */
+.add {
+  background-color: #dec0ae;
+  color: inherit;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.add:hover {
+  background-color: #d0a389;
+  cursor: pointer;
 }

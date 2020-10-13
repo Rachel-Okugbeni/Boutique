@@ -21,19 +21,19 @@ body {
     box-sizing: border-box;
 }
 
-header,
-footer {
+main-header,
+main-footer {
     background-color: $primary-color;
     display: flex;
     justify-content: space-between;
     padding: 5px 10px;
     font-size: 0.9rem;
 }
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+// footer {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+// }
 
 h1 {
     font-family: $serif-font;
@@ -163,7 +163,6 @@ background-color: $font-color;
     }
     &:hover {
         opacity: 0.6;
-        cursor: pointer;
     }
 }
 
@@ -218,7 +217,6 @@ background-color: $font-color;
             padding: 5px 10px;
             &:hover {
                 background-color: darken($primary-color, 10%);
-                cursor: pointer;
             }
         }
     }

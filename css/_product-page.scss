@@ -1,3 +1,5 @@
+/* PRODUCT PAGE - DESCRIPTION/ADD TO BASKET */
+
 .product-container {
     // border: 1px solid blue;
     display: flex;
@@ -23,6 +25,37 @@
     height: 55vh;
     border-radius: 5px;
     background-color: $primary-color;
+}
 
+/* BACK TO CATEGORY LINK*/
+.backLink {
+    display: inline-block;
+    width: 100px;
+    margin: 10px 0;
+    font-size:  0.9em;
+}
+/*QUANTITY SELECTOR*/
+.quantity {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: $background;
+    text-align: inherit;
+    width: 35px;
+}
+/* ADD TO BASKET BUTTON */
+.add {
+    background-color: darken($primary-color, 10%);
+    color: inherit;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    &:hover {
+        background-color: darken($primary-color, 20%);
+        cursor: pointer;
+    }
 }
 

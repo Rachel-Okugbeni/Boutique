@@ -5,26 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <script src="https://kit.fontawesome.com/541ebc2f3e.js" crossorigin="anonymous"></script>
+    <script src="/js/header+footer.js"></script>
     <title>Maison Fleurie</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="/index.html">HOME</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
-        <h1>Maison Fleurie</h1>
-        <nav >
-            <ul>
-                <li><a href="#">LOGIN</a></li>
-                <li><a href="#">REGISTER</a></li>
-                <li><a href="#"><i class="fas fa-shopping-basket fa-lg"></i> <span>0</span></a></li>
-
-            </ul>
-        </nav>
-    </header>
+        <main-header></main-header>
+      </header>
     <div class="navbar">
         <nav>
             <ul>
@@ -39,6 +26,7 @@
         <div class="sub-category">
             <nav>
                 <ul>
+                    <!--CHANGE TO FILTER/CHECKBOXES??-->
                     <li class="jewellery-all" onclick="showAll()">Jewellery All</li>
                     <li class="necklaces" onclick="filterProduct(necklaces)">Necklaces</li>
                     <li class="earrings" onclick="filterProduct(earrings)">Earrings</li>
@@ -231,18 +219,9 @@
     </div>
 
     <footer>
-        <div class="footer-links">
-            <nav>
-                <ul>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Delivery & Payment Info</a></li>
-                    <li><a href="#">Care Instructions</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-            </nav>
-        </div>
+       <main-footer></main-footer>
     </footer>
     <script src="/js/product-filter.js"></script>
-</body>
+    <script src="/js/basketCount.js"></script>
+  </body>
 </html>
