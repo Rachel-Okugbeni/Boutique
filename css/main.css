@@ -56,6 +56,21 @@ nav a:hover {
   border-bottom: 1px solid #EDDCD2;
 }
 
+/* GLOBAL BUTTON STYLING */
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: #72725A;
+  background-color: #dec0ae;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #d0a389;
+  cursor: pointer;
+}
+
 /* IMAGE SLIDESHOW */
 /* DIV */
 .banner {
@@ -317,19 +332,6 @@ nav a:hover {
   border-radius: 5px;
 }
 
-.product .viewProduct {
-  background-color: #EDDCD2;
-  text-decoration: none;
-  color: #72725A;
-  padding: 5px;
-  border-radius: 5px;
-  margin: 5px 0;
-}
-
-.product .viewProduct:hover {
-  background-color: #dec0ae;
-}
-
 /* PRODUCT PAGE - DESCRIPTION/ADD TO BASKET */
 .product-container {
   display: -webkit-box;
@@ -382,17 +384,81 @@ nav a:hover {
   width: 35px;
 }
 
-/* ADD TO BASKET BUTTON */
-.add {
-  background-color: #dec0ae;
-  color: inherit;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 5px;
-  border: 1px solid transparent;
+.basket-container {
+  width: 100%;
+  height: 85vh;
 }
 
-.add:hover {
-  background-color: #d0a389;
-  cursor: pointer;
+.emptyBasket {
+  display: none;
+  padding: 50px;
+}
+
+.basket {
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.basketList {
+  padding: 20px;
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.orderTotal {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+.orderTotal span {
+  font-weight: bold;
+}
+
+.basketItems {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 2px;
+}
+
+.basketItems input {
+  padding: 2px;
+  background-color: white;
+}
+
+.basketItems td {
+  height: 8vh;
+  white-space: nowrap;
+}
+
+.basketItems th,
+.basketItems td {
+  border-bottom: 1px solid #8f8f71;
+}
+
+.basketImg {
+  width: 100px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 2px 2px;
+          box-shadow: 1px 2px 2px;
+  margin: 5px;
 }

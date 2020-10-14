@@ -1,10 +1,12 @@
 const productName = document.getElementsByClassName('product-name')[0].innerHTML;
 const productPrice = document.getElementsByClassName('price')[0].innerHTML;
+const productImage = document.getElementById('default').src;
 let productQuantity = document.getElementById('quantity').defaultValue = 1;
 let updatedQuantity = 1;
 let basket = localStorage.getItem("savedBasket") ? JSON.parse(localStorage.getItem("savedBasket")) : [];
 
 let item = {
+    img: productImage,
     name: productName,
     price: productPrice,
     quantity: productQuantity,

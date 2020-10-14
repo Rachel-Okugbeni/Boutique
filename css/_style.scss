@@ -60,6 +60,21 @@ nav {
     border-bottom: 1px solid $primary-color;
 }
 
+/* GLOBAL BUTTON STYLING */
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: $font-color;
+    background-color:darken($primary-color, 10%);
+    margin: 5px;
+    &:hover {
+        background-color: darken($primary-color, 20%);
+        cursor: pointer;
+    }
+}
+
+
 /* IMAGE SLIDESHOW */
 
 /* DIV */

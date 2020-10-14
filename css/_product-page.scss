@@ -45,17 +45,5 @@
     text-align: inherit;
     width: 35px;
 }
-/* ADD TO BASKET BUTTON */
-.add {
-    background-color: darken($primary-color, 10%);
-    color: inherit;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    &:hover {
-        background-color: darken($primary-color, 20%);
-        cursor: pointer;
-    }
-}
+
 
