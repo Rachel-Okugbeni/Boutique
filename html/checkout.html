@@ -13,14 +13,36 @@
         <main-header></main-header>
       </header>
 
-    <div class="main-content">
-        <div class="basketList" id="basketList">
-            <table>
-                
-            </table>
+    <div class="basket-container">
+        <div class="emptyBasket" id="emptyBasket">
+                <h3>Your basket is empty!</h3>
+                <nav><a href="/index.html">Continue Shopping</a></nav>
         </div>
-
-
+        <div class="basket" id="basket">
+            <div class="basketList">
+                <table class="basketItems" id="basketItems">
+                    <thead><h3>YOUR BASKET</h3></thead>
+                        <tr>
+                            <th colspan="2">ITEM</th>                  
+                            <th>PRICE</th>
+                            <th>QUANTITY</th>
+                            <th>SUBTOTAL</th>
+                            <th></th>
+                        </tr>
+                </table>
+                
+                <div class="orderTotal">
+                    <div>
+                        <nav><a href="/index.html">Continue Shopping</a></nav>
+                    </div>
+                    <div>
+                        <p>ORDER TOTAL: <span id="orderTotal">£0.00</span></p>
+                        <button type="button" class="update-btn" id="update-btn">UPDATE BASKET</button>
+                        <button type="button" class="checkout-btn">CHECKOUT</button>
+                    </div>
+                </div>
+            </div>            
+        </div>
     </div>
       <footer>
         <main-footer></main-footer>
