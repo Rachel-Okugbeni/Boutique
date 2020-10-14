@@ -35,8 +35,10 @@ function addBasket() {
          } else {
              let i;
              for (i=0; i < basket.length; i++) {
-                 if (basket[i].name === item.name) {
+                 if (basket.some(basket => basket.name === item.name)) {
                     basket[i].quantity = basket[i].quantity + updatedQuantity
+                 } else {
+                    basket.push(item);
                  }
              }
          }

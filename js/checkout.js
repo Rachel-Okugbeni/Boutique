@@ -50,8 +50,8 @@ function createTable() {
       removeBtn.innerHTML = `<i class="far fa-trash-alt"></i>`;
       removeBtn.addEventListener("click", function(){
         row.remove();
-        let itemName = (element) => nameCell.innerHTML
-        let itemIndex = basketItems.findIndex(itemName)
+        let itemName = nameCell.innerHTML
+        let itemIndex = basketItems.findIndex(item => item.name === itemName)
         basketItems.splice(itemIndex,1)
       });
       buttonCell.appendChild(removeBtn)

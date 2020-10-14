@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/541ebc2f3e.js" crossorigin="anonymous"></script>
+    <script src="/js/header+footer.js"></script>
+    <title>Maison Fleurie</title>
+</head>
+<body>
+    <header>
+        <main-header></main-header>
+      </header>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="/html/category-page-jewellery.html">JEWELLERY</a></li>
+                <li><a href="#">MENS</a></li>
+                <li><a href="#">ACCESSORIES</a></li>
+                <li><a href="#">OTHER</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <nav>
+            <a href="/html/category-page-jewellery.html" class="backLink"><i class="fas fa-arrow-left fa-xs"></i> back</a> <!-- BACK TO PREVIOUS CATEGORY -->
+        </nav>
+
+    <div class="product-container">
+        <div class="product-image-container">
+            <img class="product-image" id="default" src="/assets/jewellery/Necklace/gold chain/delicate-gold-chain.jpg">
+            <!-- <img class="product-image" id="img2" src="/assets/jewellery/Necklace/Bird Necklace/gold-bird-necklace.jpg"> -->
+            <div class="slideshow-buttons">
+                <a class="prevImage" onclick="changeImage(-1)"><i class="fas fa-angle-left"></i></a>
+                <a class="nextImage" onclick="changeImage(1)"><i class="fas fa-angle-right"></i></a>
+            </div> 
+        </div>
+        <div class="product-description">
+            <h2 class="product-name">Gold Hoop Chain</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo quod rerum sunt nihil quaerat qui dolores a minima dolor ullam in nobis aut, enim cupiditate quasi nemo vel voluptas!</p>
+            <h4 class="price">£15.00</h4>
+            <label for="quantity">Quantity</label>
+            <input class="quantity" id="quantity" name="quantity" type="number" placeholder="1" min="1" max="10" required onchange="updateValue()">
+            <br>
+            <button type="button" class="add" id="add" onclick="addBasket()">ADD TO BASKET</button>
+        </div>
+    </div>
+
+</div>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+    <script src="/js/product-image.js"></script>
+    <script src="/js/basket.js"></script>
+    <script src="/js/basketCount.js"></script>
+</body>
+</html>
