@@ -29,11 +29,6 @@ main-footer {
     padding: 5px 10px;
     font-size: 0.9rem;
 }
-// footer {
-//     position: absolute;
-//     bottom: 0;
-//     width: 100%;
-// }
 
 h1 {
     font-family: $serif-font;
@@ -74,6 +69,18 @@ button {
     }
 }
 
+/* SCROLLING MARQUEE */
+.marquee {
+  background-color: darken($background, 10%);
+  font-weight: bold;
+  padding: 5px;
+  span {
+      font-size: 0.9rem;
+  }
+  marquee {
+      width: 50%;
+  }
+}
 
 /* IMAGE SLIDESHOW */
 

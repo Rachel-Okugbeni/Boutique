@@ -71,6 +71,21 @@ button:hover {
   cursor: pointer;
 }
 
+/* SCROLLING MARQUEE */
+.marquee {
+  background-color: #dad8ce;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.marquee span {
+  font-size: 0.9rem;
+}
+
+.marquee marquee {
+  width: 50%;
+}
+
 /* IMAGE SLIDESHOW */
 /* DIV */
 .banner {
@@ -461,4 +476,25 @@ button:hover {
   -webkit-box-shadow: 1px 2px 2px;
           box-shadow: 1px 2px 2px;
   margin: 5px;
+}
+
+.login-container {
+  height: 90vh;
+}
+
+.login-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
+}
+
+.login-container form .login,
+.login-container form .register {
+  height: 50vh;
+  width: 50vw;
+}
+
+.register {
+  display: none;
 }

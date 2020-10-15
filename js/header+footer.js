@@ -10,8 +10,7 @@ class Header extends HTMLElement {
     <h1>Maison Fleurie</h1>
     <nav >
         <ul>
-            <li><a href="#">LOGIN</a></li>
-            <li><a href="#">REGISTER</a></li>
+            <li><a href="/html/login.html">LOGIN</a></li>
             <li><a href="/html/checkout.html"><i class="fas fa-shopping-basket fa-lg"></i> <span id="cartVal">0</span></a></li>
         </ul>
     </nav>`;
