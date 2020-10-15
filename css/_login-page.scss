@@ -1,0 +1,16 @@
+.login-container {
+    height: 90vh;
+    form{
+        display: flex;
+        border: 1px solid black;
+        .login,
+        .register {
+            height: 50vh;
+            width: 50vw;
+        }
+    }
+  }
+
+  .register{
+      display: none;
+  }
