@@ -19,6 +19,9 @@
                     <h3>Your basket is empty!</h3>
                     <nav><a href="/index.html">Continue Shopping</a></nav>
             </div>
+            <div class="checkout" id="checkout">
+                <h3>Thank You For Your Order!</h3>
+             </div>
             <div class="basket" id="basket">
                 <div class="basketList">
                     <table class="basketItems" id="basketItems">
@@ -38,7 +41,7 @@
                         <div>
                             <p>ORDER TOTAL: <span id="orderTotal">£0.00</span></p>
                             <button type="button" class="update-btn" id="update-btn">UPDATE BASKET</button>
-                            <button type="button" class="checkout-btn">CHECKOUT</button>
+                            <button type="button" class="checkout-btn" onclick="checkout()">CHECKOUT</button>
                         </div>
                     </div>
                 </div>            

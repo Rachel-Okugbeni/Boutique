@@ -91,6 +91,18 @@ updateBasket.addEventListener("click", function(){
   window.location.reload();
 });
 
+//DISPLAY CHECKOUT MESSAGE
+function checkout() {
+  document.getElementById("basket").style.display = "none"
+  document.getElementById("checkout").style.display = "block"
+  basketItems = [];
+  localStorage.setItem("savedBasket", JSON.stringify(basketItems));
+  setTimeout(function() {
+    window.location.reload();
+  }, 1000);
+
+}
+
 
 
 
