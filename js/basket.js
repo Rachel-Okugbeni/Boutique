@@ -43,10 +43,13 @@ function addBasket() {
              }
          }
     productTotal();
-    basketCount()
+    basketCount();
     localStorage.setItem("savedBasket", JSON.stringify(basket));
 }
 
+function basketCount() {
+    document.getElementById('cartVal').innerHTML =  basket.reduce((val, {quantity}) => val + quantity, 0);
+}
 
 
 
