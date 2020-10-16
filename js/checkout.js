@@ -1,9 +1,23 @@
+if (localStorage.length === 0) {
+  emptyBasket()
+}
+
 let basketItems = JSON.parse(localStorage.getItem("savedBasket"));
 let updateBasket = document.getElementById("update-btn")
 let orderTotal = basketItems.reduce((val, {totalPrice}) => val + totalPrice, 0);
 
 // DISPLAY ORDER TOTAL
 document.getElementById('orderTotal').innerHTML = `£${orderTotal.toFixed(2)}`
+
+// DISPLAY EMPTY BASKET MESSAGE IF BASKET ARRAY IS EMPTY
+function emptyBasket() {
+  document.getElementById("basket").style.display = "none"
+  document.getElementById("emptyBasket").style.display = "block"
+}
+
+if (basketItems.length === 0) { 
+  emptyBasket()
+}
 
 // DISPLAY BASKET ITEMS
 function createTable() {
@@ -18,7 +32,6 @@ function createTable() {
     imgElement.setAttribute("class", "basketImg");
     imgElement.setAttribute("src", basketItems[i].img);
     imgCell.appendChild(imgElement);
-    // imgCell.innerHTML = 
     // CREATE NAME CELL
       let nameCell = document.createElement("td");
       nameCell.innerHTML = basketItems[i].name
@@ -78,8 +91,6 @@ updateBasket.addEventListener("click", function(){
   window.location.reload();
 });
 
-// DISPLAY EMPTY BASKET MESSAGE IF BASKET ARRAY IS EMPTY
-if (basketItems.length === 0) { 
-  document.getElementById("basket").style.display = "none"
-  document.getElementById("emptyBasket").style.display = "block"
-}
+
+
+
