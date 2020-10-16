@@ -1,16 +1,24 @@
 .login-container {
-    height: 90vh;
-    form{
-        display: flex;
-        border: 1px solid black;
-        .login,
-        .register {
-            height: 50vh;
-            width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    // height: 100vh;
+    justify-content: space-evenly;
+    .login,
+    .register {
+        width: 20vw;
         }
+    form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }  
+    fieldset {
+        border: 0;
     }
-  }
+    .form-msg {
+        font-size: 0.9rem;
+    }
+}
 
-  .register{
-      display: none;
-  }
+
+
