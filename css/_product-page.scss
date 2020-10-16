@@ -1,30 +1,27 @@
 /* PRODUCT PAGE - DESCRIPTION/ADD TO BASKET */
-
 .product-container {
-    // border: 1px solid blue;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    height: 70vh;
+    width: auto;
     margin:20px;
-    // margin-bottom: 40px;
-    padding: 0 20px;
+    padding: 20px;
+    padding-bottom: 10px;
     border-radius: 5px;
-    // overflow: hidden;
+    background-color: $primary-color;
+    position: relative;
+    left: 45%;
+    transform: translate(-50%);
 }
 .product-image {
     width: 40vw;
     min-width: 300px;
     display: none;
     border-radius: 5px;
-    margin: 0 10px;
 }
+
 .product-description  {
     width: 300px;
-    height: 55vh;
-    border-radius: 5px;
-    background-color: $primary-color;
 }
 
 /* BACK TO CATEGORY LINK*/
