@@ -23,12 +23,28 @@ main-footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 5px 10px;
   font-size: 0.9rem;
+}
+
+main-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
 }
 
 h1 {
   font-family: "Mr Bedfort", serif;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 3rem;
+  /* Footer height */
 }
 
 /* GLOBAL LINK STYLING */
@@ -132,7 +148,7 @@ button:hover {
 .nextImage {
   cursor: pointer;
   padding: 5px;
-  color: #EDDCD2;
+  color: #dec0ae;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
 }
@@ -262,6 +278,10 @@ button:hover {
 }
 
 /*NEWSLETTER SIGN UP FORM */
+.newsletter {
+  padding-bottom: 20px;
+}
+
 .signup-form {
   padding: 10px;
   display: -webkit-box;
@@ -277,8 +297,8 @@ button:hover {
           align-items: center;
 }
 
-.signup-form input,
-.signup-form #submit {
+input,
+#newsletter-signup {
   padding: 5px;
   margin: 5px;
   border-radius: 2px;
@@ -290,16 +310,16 @@ button:hover {
   color: inherit;
 }
 
-.signup-form input:focus {
+input:focus {
   background-color: #EDDCD2;
 }
 
-.signup-form #submit {
+.form-btn {
   background-color: #EDDCD2;
   padding: 5px 10px;
 }
 
-.signup-form #submit:hover {
+.form-btn:hover {
   background-color: #dec0ae;
 }
 
@@ -307,11 +327,6 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.sub-category {
-  left: 0;
-  height: auto;
 }
 
 .sub-category nav li {
@@ -357,11 +372,16 @@ button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  height: 70vh;
+  width: auto;
   margin: 20px;
-  padding: 0 20px;
+  padding: 20px;
+  padding-bottom: 10px;
   border-radius: 5px;
+  background-color: #EDDCD2;
+  position: relative;
+  left: 45%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .product-image {
@@ -369,14 +389,10 @@ button:hover {
   min-width: 300px;
   display: none;
   border-radius: 5px;
-  margin: 0 10px;
 }
 
 .product-description {
   width: 300px;
-  height: 55vh;
-  border-radius: 5px;
-  background-color: #EDDCD2;
 }
 
 /* BACK TO CATEGORY LINK*/
@@ -399,21 +415,8 @@ button:hover {
   width: 35px;
 }
 
-.basket-container {
-  width: 100%;
-  height: 85vh;
-}
-
 .emptyBasket {
   display: none;
-  padding: 50px;
-}
-
-.basket {
-  height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .basketList {
@@ -479,22 +482,35 @@ button:hover {
 }
 
 .login-container {
-  height: 90vh;
-}
-
-.login-container form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid black;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.login-container form .login,
-.login-container form .register {
-  height: 50vh;
-  width: 50vw;
+.login-container .login,
+.login-container .register {
+  width: 20vw;
 }
 
-.register {
-  display: none;
+.login-container form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-container fieldset {
+  border: 0;
+}
+
+.login-container .form-msg {
+  font-size: 0.9rem;
 }
