@@ -514,3 +514,7 @@ input:focus {
 .login-container .form-msg {
   font-size: 0.9rem;
 }
+
+.register {
+  display: none;
+}

@@ -16,19 +16,19 @@
     <div class="content-wrap">
         <div class="login-container">
             <form action="submit">
-                <fieldset class="login">
+                <fieldset class="login" id="login">
                     <legend><h2>LOGIN</h2></legend>
                     <div class="row">
                         <input type="text" name="login-email" id="login-email" placeholder="EMAIL" required>
                     </div>
                     <div class="row">
-                        <input type="login-password" name="login-password" id="login-password" placeholder="PASSWORD" required>
+                        <input type="password" name="login-password" id="login-password" placeholder="PASSWORD" required>
                     </div>
-                    <button type="submit" name="login-btn" class="form-btn" id="login-btn">LOGIN</button>
+                    <button type="button" name="login-btn" class="form-btn" id="login-btn">LOGIN</button>
                     <p>Don't have an account?</p>
                     <button type="button" name="open-reg" class="form-btn" id="open-reg">REGISTER</button>
                 </fieldset>
-                <fieldset class="register">
+                <fieldset class="register" id="register">
                     <legend><h2>REGISTER</h2></legend>
                     <div class="row">
                         <input type="text" name="fname" id="fname" placeholder="FIRST NAME" required>
@@ -50,6 +50,8 @@
                     <label for="newsletter" class="form-msg">Sign up to our newsletter to receive news and discounts!</label>
                     </div>
                     <button type="button" name="reg-btn" class="form-btn" id="reg-btn">REGISTER</button>
+                    <p>Already have an account?</p>
+                    <button type="button" name="open-reg" class="form-btn" id="open-log">LOGIN</button>
                 </fieldset>
             </form>
         </div>
@@ -58,6 +60,7 @@
         <main-footer></main-footer>
     </footer>
 </div>
+    <script src="/js/login.js"></script>
     <script src="/js/basketCount.js"></script>
  </body>
 </html>
