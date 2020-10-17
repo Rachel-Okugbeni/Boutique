@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/541ebc2f3e.js" crossorigin="anonymous"></script>
+    <script src="/js/header+footer.js"></script>
+    <title>Maison Fleurie</title>
+</head>
+<body>
+    <div class="page-container">    
+    <header>
+      <main-header></main-header>
+    </header>
+        <div class="content-wrap">
+            <div class="contact-page">
+                <form class="contact-form">
+                    <fieldset>
+                        <legend><h2>CONTACT</h2></legend>
+                        <div class="row">
+                            <input type="text" name="name" class="contact-input" id="contact-name" placeholder="YOUR NAME" required>
+                        </div>
+                        <div class="row">
+                            <input type="text" name="email" class="contact-input" id="contact-email" placeholder="YOUR EMAIL" required>
+                        </div>
+                        <div class="row">
+                            <input type="text" name="phone" class="contact-input" id="contact-phone" placeholder="PHONE NUMBER (optional)">
+                        </div>
+                        <div class="row">
+                            <select name="Enquiry"  id="enquiry">
+                                <option value="order-issue">THERE'S A PROBLEM WITH MY ORDER</option>
+                                <option value="refund">I NEED A REFUND</option>
+                                <option value="payment">I HAVE AN ISSUE WITH MY ACCOUNT</option>
+                                <option value="payment">OTHER/GENERAL ENQUIRY</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <textarea name="msg" class="contact-input" id="contact-msg" cols="35" rows="5"></textarea>
+                        </div>
+                        <button type="submit" name="submit" class="form-btn" id="contact-submit">SEND</button>
+                    </fieldset>
+                </form>
+                <div class="address">
+                    <h2>WRITE TO US</h2>
+                    <p>142  Ermin Street</p>    
+                    <p>CHERTSEY</p>    
+                    <p>KT16 2JG</p>    
+                </div>
+            </div>
+        </div>
+        <footer>
+            <main-footer></main-footer>
+        </footer>
+    </div>
+        <script src="/js/basketCount.js"></script>
+     </body>
+    </html>

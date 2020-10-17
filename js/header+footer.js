@@ -4,7 +4,7 @@ class Header extends HTMLElement {
         `<nav>
         <ul>
             <li><a href="/index.html">HOME</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="/html/contact.html">CONTACT</a></li>
         </ul>
     </nav>
     <h1>Maison Fleurie</h1>
@@ -23,7 +23,7 @@ class Footer extends HTMLElement {
         `<div class="footer-links">
             <nav>
                 <ul>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="html/contact.html">Contact</a></li>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Delivery & Payment Info</a></li>
                     <li><a href="#">Care Instructions</a></li>

@@ -14,6 +14,7 @@ body {
           box-sizing: border-box;
 }
 
+/* HEADER & FOOTER STYLING */
 main-header,
 main-footer {
   background-color: #EDDCD2;
@@ -85,6 +86,48 @@ button {
 button:hover {
   background-color: #d0a389;
   cursor: pointer;
+}
+
+/*GLOBAL FORM STYLING */
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+input,
+textarea,
+select {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  outline: none;
+  -webkit-box-shadow: 1px 1px 3px;
+          box-shadow: 1px 1px 3px;
+  font-family: inherit;
+  color: inherit;
+}
+
+fieldset {
+  border: 0;
+}
+
+input:focus,
+select:focus {
+  background-color: #EDDCD2;
+}
+
+.form-btn {
+  background-color: #EDDCD2;
+  padding: 5px 10px;
+}
+
+.form-btn:hover {
+  background-color: #dec0ae;
 }
 
 /* SCROLLING MARQUEE */
@@ -277,50 +320,9 @@ button:hover {
   background-position: center;
 }
 
-/*NEWSLETTER SIGN UP FORM */
+/*NEWSLETTER SIGN UP SECTION */
 .newsletter {
   padding-bottom: 20px;
-}
-
-.signup-form {
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-input,
-#newsletter-signup {
-  padding: 5px;
-  margin: 5px;
-  border-radius: 2px;
-  border: 1px solid transparent;
-  outline: none;
-  -webkit-box-shadow: 1px 1px 3px;
-          box-shadow: 1px 1px 3px;
-  font-family: inherit;
-  color: inherit;
-}
-
-input:focus {
-  background-color: #EDDCD2;
-}
-
-.form-btn {
-  background-color: #EDDCD2;
-  padding: 5px 10px;
-}
-
-.form-btn:hover {
-  background-color: #dec0ae;
 }
 
 .main-content {
@@ -499,24 +501,35 @@ input:focus {
   width: 20vw;
 }
 
-.login-container form {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.login-container fieldset {
-  border: 0;
-}
-
 .login-container .form-msg {
   font-size: 0.9rem;
 }
 
 .register {
   display: none;
+}
+
+/*RESIZE CONTACT FORM INPUTS */
+.contact-input {
+  width: 268px;
+}
+
+.contact-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+.contact-form,
+.address {
+  min-width: 320px;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
 }
