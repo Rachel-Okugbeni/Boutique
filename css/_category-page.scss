@@ -1,32 +1,32 @@
 .main-content {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .sub-category {
-    nav {
-         li {
-             display: block;
-             text-align: left;
-             &:hover {
-                 font-weight: bold;
-                 cursor: pointer;
-             }
-         }
-     }
+    li {
+        display: block;
+        text-align: left;
+        &:hover {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
 }
 
 .product-list {
-    display: flex;
+    display: inherit;
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 0 20px;
 }
 .product {
-    width: 250px;
-    height: 350px;
     margin: 10px 30px;
     line-height: 10px;
     img {
         border-radius: 5px;
     }
  }
+
+ 

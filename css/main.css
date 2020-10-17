@@ -15,6 +15,21 @@ body {
 }
 
 /* HEADER & FOOTER STYLING */
+logo-header {
+  background-color: #EDDCD2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px, 0;
+}
+
 main-header,
 main-footer {
   background-color: #EDDCD2;
@@ -24,14 +39,14 @@ main-footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 0.9rem;
+  font-size: 0.9em;
 }
 
 main-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 3rem;
+  height: auto;
 }
 
 h1 {
@@ -44,22 +59,22 @@ h1 {
 }
 
 .content-wrap {
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   /* Footer height */
 }
 
 /* GLOBAL LINK STYLING */
-nav li {
+li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 
-nav a {
+a {
   text-decoration: none;
   color: #72725A;
 }
 
-nav a:hover {
+a:hover {
   font-weight: bold;
 }
 
@@ -75,17 +90,16 @@ nav a:hover {
 
 /* GLOBAL BUTTON STYLING */
 button {
-  padding: 10px;
+  background-color: #EDDCD2;
+  padding: 5px 10px;
+  margin: 5px;
   border-radius: 5px;
   border: 1px solid transparent;
   color: #72725A;
-  background-color: #dec0ae;
-  margin: 5px;
 }
 
 button:hover {
-  background-color: #d0a389;
-  cursor: pointer;
+  background-color: #dec0ae;
 }
 
 /*GLOBAL FORM STYLING */
@@ -121,28 +135,31 @@ select:focus {
   background-color: #EDDCD2;
 }
 
-.form-btn {
-  background-color: #EDDCD2;
-  padding: 5px 10px;
-}
-
-.form-btn:hover {
-  background-color: #dec0ae;
-}
-
 /* SCROLLING MARQUEE */
-.marquee {
+.marquee,
+.static-marquee-mobile {
   background-color: #dad8ce;
   font-weight: bold;
   padding: 5px;
 }
 
-.marquee span {
-  font-size: 0.9rem;
+.marquee span,
+.static-marquee-mobile span {
+  font-size: 0.9em;
 }
 
-.marquee marquee {
+.marquee marquee,
+.static-marquee-mobile marquee {
   width: 50%;
+}
+
+.static-marquee-mobile {
+  display: none;
+  font-size: 0.8em;
+}
+
+.static-marquee-mobile span {
+  font-size: 0.9em;
 }
 
 /* IMAGE SLIDESHOW */
@@ -320,31 +337,59 @@ select:focus {
   background-position: center;
 }
 
-/*NEWSLETTER SIGN UP SECTION */
-.newsletter {
-  padding-bottom: 20px;
+/* TABLET & SMALLER */
+@media only screen and (max-width: 768px) {
+  /*NEWSLETTER SIGN UP SECTION */
+  .newsletter {
+    padding-bottom: 20px;
+  }
+  /* SLIDE SHOW */
+  .banner {
+    display: none;
+  }
+  /* SWAP MARQUEE FOR STATIC BANNER */
+  .static-marquee-mobile {
+    display: block;
+  }
+  .marquee {
+    display: none;
+  }
+  /* REMOVE TOP MARGIN FROM CATEGORY SECTION */
+  .categories {
+    margin: 0;
+  }
+}
+
+/* SMALL MOBILES */
+@media only screen and (max-width: 375px) {
+  .content-wrap {
+    padding-bottom: 7rem;
+  }
 }
 
 .main-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.sub-category nav li {
+.sub-category li {
   display: block;
   text-align: left;
 }
 
-.sub-category nav li:hover {
+.sub-category li:hover {
   font-weight: bold;
   cursor: pointer;
 }
 
 .product-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inherit;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: start;
@@ -354,8 +399,6 @@ select:focus {
 }
 
 .product {
-  width: 250px;
-  height: 350px;
   margin: 10px 30px;
   line-height: 10px;
 }
@@ -374,16 +417,11 @@ select:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: auto;
   margin: 20px;
   padding: 20px;
   padding-bottom: 10px;
   border-radius: 5px;
   background-color: #EDDCD2;
-  position: relative;
-  left: 45%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
 }
 
 .product-image {
@@ -397,14 +435,6 @@ select:focus {
   width: 300px;
 }
 
-/* BACK TO CATEGORY LINK*/
-.backLink {
-  display: inline-block;
-  width: 100px;
-  margin: 10px 0;
-  font-size: 0.9em;
-}
-
 /*QUANTITY SELECTOR*/
 .quantity {
   border: 1px solid transparent;
@@ -415,6 +445,17 @@ select:focus {
   background-color: #F0EFEB;
   text-align: inherit;
   width: 35px;
+}
+
+/* ADD TO BASKET BUTTON */
+.add {
+  padding: 10px;
+  background-color: #dec0ae;
+}
+
+.add:hover {
+  background-color: #d0a389;
+  cursor: pointer;
 }
 
 .emptyBasket,
@@ -502,7 +543,7 @@ select:focus {
 }
 
 .login-container .form-msg {
-  font-size: 0.9rem;
+  font-size: 0.8em;
 }
 
 .register {

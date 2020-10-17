@@ -12,29 +12,26 @@
     <div class="page-container">
     <header>
         <main-header></main-header>
+        <logo-header></logo-header>
       </header>
       <div class="content-wrap">
     <div class="navbar">
         <nav>
             <ul>
-                <li><a href="#">JEWELLERY</a></li>
-                <li><a href="#">MENS</a></li>
-                <li><a href="#">ACCESSORIES</a></li>
+                <li><a href="/html/category-page-jewellery.html">JEWELLERY</a></li>|
+                <li><a href="#">MENS</a></li>|
+                <li><a href="#">ACCESSORIES</a></li>|
                 <li><a href="#">OTHER</a></li>
             </ul>
         </nav>
     </div>
         <div class="main-content">
             <div class="sub-category">
-                <nav>
-                    <ul>
-                        <!--CHANGE TO FILTER/CHECKBOXES??-->
-                        <li class="jewellery-all" onclick="showAll()">Jewellery All</li>
-                        <li class="necklaces" onclick="filterProduct(necklaces)">Necklaces</li>
-                        <li class="earrings" onclick="filterProduct(earrings)">Earrings</li>
-                        <li class="bracelets" onclick="filterProduct(bracelets)">Bracelets</li>
-                    </ul>
-                </nav>
+                    <button class="jewellery-all" onclick="showAll()">View All</button>
+                    <button class="necklaces" onclick="filterProduct(necklaces)">Necklaces</button>
+                    <button class="bracelets" onclick="filterProduct(bracelets)">Bracelets</button>
+                    <button class="earrings" onclick="filterProduct(earrings)">Earrings</button>
+                </select>
             </div>
             <div class="product-list">
             <!-- Necklaces -->    
