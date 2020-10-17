@@ -22,6 +22,7 @@ body {
     box-sizing: border-box;
 }
 
+/* HEADER & FOOTER STYLING */
 main-header,
 main-footer {
     background-color: $primary-color;
@@ -82,6 +83,43 @@ button {
         cursor: pointer;
     }
 }
+
+/*GLOBAL FORM STYLING */
+form {
+    display: flex;
+    justify-content: center;
+} 
+
+input,
+textarea,
+select
+    {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    outline: none;
+    box-shadow: 1px 1px 3px;
+    font-family: inherit;
+    color: inherit;
+}
+fieldset {
+    border: 0;
+}
+input:focus,
+select:focus {
+    background-color: $primary-color;
+}
+.form-btn {
+    background-color: $primary-color;
+    padding: 5px 10px;
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
+
+
+//////////* HOME PAGE STYLING *///////
 
 /* SCROLLING MARQUEE */
 .marquee {
@@ -227,35 +265,7 @@ background-color: $font-color;
 
 }
 
-/*NEWSLETTER SIGN UP FORM */
+/*NEWSLETTER SIGN UP SECTION */
 .newsletter {
     padding-bottom: 20px;
 }
-    .signup-form {
-        padding: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center; 
-    }
-    input,
-    #newsletter-signup {
-        padding: 5px;
-        margin: 5px;
-        border-radius: 2px;
-        border: 1px solid transparent;
-        outline: none;
-        box-shadow: 1px 1px 3px;
-        font-family: inherit;
-        color: inherit;
-    }
-    input:focus {
-        background-color: $primary-color;
-    }
-    .form-btn {
-        background-color: $primary-color;
-        padding: 5px 10px;
-        &:hover {
-            background-color: darken($primary-color, 10%);
-        }
-    }
