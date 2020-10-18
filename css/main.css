@@ -314,25 +314,25 @@ select:focus {
 }
 
 #jewellery-all {
-  background-image: url("/assets/jewellery/Bracelet/feather bracelet/bangle-bracelet-with-feathers.jpg");
+  background-image: url("/assets/jewellery/Bracelet/feather bracelet/bangle.bracelet.with.feathers_small.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #accessories {
-  background-image: url("/assets/bags/light-pink-purse.jpg");
+  background-image: url("/assets/bags/Pink Bag/light.pink.purse-small.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #mens {
-  background-image: url("/assets/jewellery/Mens/Anchor Bracelet/anchor-bracelet-for-men.jpg");
+  background-image: url("/assets/jewellery/Mens/Anchor Bracelet/anchor.bracelet.for.men-small.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #other {
-  background-image: url("/assets/pins/lightning-hard-enamel-lapel-pin.jpg");
+  background-image: url("/assets/pins/Rainbow/rainbow.hard.enamel.lapel.pin.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -357,6 +357,11 @@ select:focus {
   /* REMOVE TOP MARGIN FROM CATEGORY SECTION */
   .categories {
     margin: 0;
+  }
+  .product-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -392,14 +397,14 @@ select:focus {
   display: inherit;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding: 0 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10px;
 }
 
 .product {
-  margin: 10px 30px;
+  margin: 10px 10px;
   line-height: 10px;
 }
 
