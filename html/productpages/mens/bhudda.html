@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/541ebc2f3e.js" crossorigin="anonymous"></script>
+    <script src="/js/header+footer.js"></script>
+    <script src="/js/navbar.js"></script>
+    <title>Maison Fleurie</title>
+</head>
+<body>
+    <div class="page-container">
+    <header>
+        <main-header></main-header>
+        <logo-header></logo-header>
+      </header>
+      <div class="content-wrap">
+        <nav-bar></nav-bar>
+        <div class="main-content">
+            <div class="product-container">
+                <div class="product-image-container">
+                    <img class="product-image" id="default" src="/assets/jewellery/Mens/Buddha Bracelet/black.buddha.bracelet-default.jpg">
+                    <img class="product-image" id="img2" src="/assets/jewellery/Mens/Buddha Bracelet/seven.chakra.bracelet-closeup.jpg">
+                    <div class="slideshow-buttons">
+                        <a class="prevImage" onclick="changeImage(-1)"><i class="fas fa-angle-left"></i></a>
+                        <a class="nextImage" onclick="changeImage(1)"><i class="fas fa-angle-right"></i></a>
+                    </div> 
+                </div>
+                <div class="product-description">
+                    <h2 class="product-name">Black Bhudda Bracelet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo quod rerum sunt nihil quaerat qui dolores a minima dolor ullam in nobis aut, enim cupiditate quasi nemo vel voluptas!</p>
+                    <h4 class="price">£8.50</h4>
+                    <label for="quantity">Quantity</label>
+                    <input class="quantity" id="quantity" name="quantity" type="number" placeholder="1" min="1" max="10" required onchange="updateValue()">
+                    <br>
+                    <button type="button" class="add" id="add" onclick="addBasket()">ADD TO BASKET</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <main-footer></main-footer>
+    </footer>
+</div>
+    <script src="/js/basketcount.js"></script>
+    <script src="/js/product-image.js"></script>
+    <script src="/js/basket.js"></script>
+
+</body>
+</html>
