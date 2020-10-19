@@ -24,10 +24,7 @@ class Banner extends HTMLElement {
         </div>`
     }
 }
-
-
-
-          
+         
 
 class Footer extends HTMLElement {
     connectedCallback() {
@@ -43,6 +40,7 @@ class Footer extends HTMLElement {
         </div>`
     }
 }
+
 
 customElements.define('main-header', Header);
 customElements.define('main-footer', Footer);

@@ -365,7 +365,6 @@ select:focus {
 }
 
 .product-image {
-  width: 45vw;
   min-width: 280px;
   display: none;
   border-radius: 5px;
