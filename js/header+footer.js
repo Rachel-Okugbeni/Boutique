@@ -20,7 +20,7 @@ class Banner extends HTMLElement {
     connectedCallback() {
         this.innerHTML = 
         `<div class="logo">
-        <h1>Maison Fleurie</h1>
+            <li><a href="/index.html"><h1>Maison Fleurie</h1></a></li>
         </div>`
     }
 }
