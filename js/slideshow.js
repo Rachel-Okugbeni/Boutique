@@ -3,7 +3,6 @@ showSlides(slideIndex);
 
 function showSlides(n) {
   const slides = document.getElementsByClassName("banner-slide");
-  const dots = document.getElementsByClassName("dot");
   let i;
   if (n > slides.length) {
       slideIndex = 1

@@ -29,16 +29,22 @@ function productTotal() {
 
 // ADDS ITEM TO BASKET ARRAY & UPDATE LOCAL STORAGE
 function addBasket() {
-         if (basket.length === 0 || (basket.find(x => x.name === item.name)) === undefined) {
+         if (basket.length === 0) {
             item.quantity = updatedQuantity
-            basket.push(item)
+            basket.push(item);
             } else {
-                for (let i=0; i < basket.length; i++) {
-                    if (basket[i].name === item.name) {
+                let i;
+                for (i=0; i < basket.length; i++) {
+                    if (basket.some(basket => basket.name === item.name)) {
                         basket[i].quantity = basket[i].quantity + updatedQuantity
-                    } 
+                    } else {    
+                        item.quantity = updatedQuantity
+                        basket.push(item);
+                    }
                 }
             }
+         
+         console.log(basket)
     productTotal();
     basketCount();
     localStorage.setItem("savedBasket", JSON.stringify(basket));
