@@ -249,19 +249,19 @@ background-color: $font-color;
 }
 
 #jewellery-all {
-    background-image: url('/assets/jewellery/Bracelet/feather bracelet/bangle.bracelet.with.feathers_small.jpg');
+    background-image: url('/assets/jewellery/Bracelet/feather bracelet/bangle.bracelet.with.feathers-default.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #accessories {
-    background-image: url('/assets/bags/Pink Bag/light.pink.purse-small.jpg');
+    background-image: url('/assets/bags/Pink Bag/light.pink.purse-default.jpg');
     background-size: cover;
     background-position: center;
     
 }
 #mens {
-    background-image: url('/assets/jewellery/Mens/Anchor Bracelet/anchor.bracelet.for.men-small.jpg');
+    background-image: url('/assets/jewellery/Mens/Anchor Bracelet/anchor-bracelet-leather.jpg');
     background-size: cover;
     background-position: center;
 
@@ -296,6 +296,9 @@ background-color: $font-color;
     }
     .product-list {
         justify-content: center;
+    }
+    .product-container {
+        padding: 10px !important;
     }
 }
 

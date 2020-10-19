@@ -1,4 +1,10 @@
 /* PRODUCT PAGE - DESCRIPTION/ADD TO BASKET */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .product-container {
     display: flex;
     flex-wrap: wrap;
@@ -18,6 +24,7 @@
 
 .product-description  {
     width: 300px;
+    min-width: 200px;
 }
 
 /*QUANTITY SELECTOR*/

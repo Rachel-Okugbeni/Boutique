@@ -314,19 +314,19 @@ select:focus {
 }
 
 #jewellery-all {
-  background-image: url("/assets/jewellery/Bracelet/feather bracelet/bangle.bracelet.with.feathers_small.jpg");
+  background-image: url("/assets/jewellery/Bracelet/feather bracelet/bangle.bracelet.with.feathers-default.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #accessories {
-  background-image: url("/assets/bags/Pink Bag/light.pink.purse-small.jpg");
+  background-image: url("/assets/bags/Pink Bag/light.pink.purse-default.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #mens {
-  background-image: url("/assets/jewellery/Mens/Anchor Bracelet/anchor.bracelet.for.men-small.jpg");
+  background-image: url("/assets/jewellery/Mens/Anchor Bracelet/anchor-bracelet-leather.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -363,6 +363,9 @@ select:focus {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .product-container {
+    padding: 10px !important;
+  }
 }
 
 /* SMALL MOBILES */
@@ -370,17 +373,6 @@ select:focus {
   .content-wrap {
     padding-bottom: 7rem;
   }
-}
-
-.main-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .sub-category li {
@@ -394,7 +386,9 @@ select:focus {
 }
 
 .product-list {
-  display: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -413,6 +407,17 @@ select:focus {
 }
 
 /* PRODUCT PAGE - DESCRIPTION/ADD TO BASKET */
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .product-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,6 +443,7 @@ select:focus {
 
 .product-description {
   width: 300px;
+  min-width: 200px;
 }
 
 /*QUANTITY SELECTOR*/
