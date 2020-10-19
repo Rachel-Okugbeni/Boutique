@@ -1,9 +1,13 @@
+//////*CHECKOUT PAGE STYLING *//////
+
+/* EMPTY BASKET & CHECKOUT MESSAGE HIDDEN BY DEFAULT */
 .emptyBasket,
 .checkout {
     display: none;
     margin: 50px;
 }
 
+/* ARRAY OF ITEMS ADDED TO BASKET */
 .basketList {
     padding: 20px;
     width: 55%;
@@ -15,17 +19,7 @@
     transform: translate(-50%)
 }
 
-.orderTotal {
-    text-align: right;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px;
-    span {
-        font-weight: bold;
-    }
-}
-
+/* TABLE DISPLAYS BASKET ITEMS */
 .basketItems {
     width: 100%;
     border-collapse: collapse;
@@ -43,10 +37,22 @@
         border-bottom: 1px solid lighten($font-color, 10%);
     }
 }
-
+/* PRODUCT IMAGE IN BASKET */
 .basketImg {
     width: 100px;
     border-radius: 5px;
     box-shadow: 1px 2px 2px;
     margin: 5px;
+}
+
+/* TOTAL PRICE OF ORDER - UPDATES ON 'UPDATE BASKET' */
+.orderTotal {
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    span {
+        font-weight: bold;
+    }
 }

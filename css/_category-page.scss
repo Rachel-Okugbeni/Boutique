@@ -1,18 +1,8 @@
-.sub-category {
-    li {
-        display: block;
-        text-align: left;
-        &:hover {
-            font-weight: bold;
-            cursor: pointer;
-        }
-    }
-}
 .product-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 .product {
     margin: 10px 10px;

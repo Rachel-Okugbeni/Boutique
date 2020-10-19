@@ -151,71 +151,32 @@ select:focus {
 .banner {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    margin: 20px 0;
 }
-.slideshow-container {
-    position: relative;
-    width: 30vw;
-}
+
 /*Slideshow image */
 .banner-slide {
     display: none;
 }
 .banner-img {
-    width: 30vw;    
     border-radius: 5px;
-}
-/* Previous/Next Styling */
-.slideshow-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.prev,
-.next,
-.prevImage,
-.nextImage {
-    cursor: pointer;
-    padding: 5px;
-    color: darken($primary-color, 10%);
-    transition: 0.6s ease;
-    &:hover {
-    color: $font-color;
-    opacity: 0.8;
-    }
-}
-/* Active Slide dots */
-.dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: $primary-color;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    }
-    
-.active, 
-.dot:hover {
-background-color: $font-color;
 }
 
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 2s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
   }
   
   @-webkit-keyframes fade {
-    from {opacity: .4}
+    from {opacity: .5}
     to {opacity: 1}
   }
   
   @keyframes fade {
-    from {opacity: .4}
+    from {opacity: .5}
     to {opacity: 1}
   }
 
@@ -297,16 +258,11 @@ background-color: $font-color;
     .categories {
         margin: 0;
     }
-    .product-list {
-        justify-content: center;
-    }
-    .product-container {
-        padding: 10px !important;
-    }
 }
 
 /* SMALL MOBILES */
 @media only screen and (max-width: 375px) {
+    /* INCREASE BOTTOM PADDING TO ACCOMODATE FOOTER HEIGHT */
     .content-wrap {
         padding-bottom: 7rem;
       }

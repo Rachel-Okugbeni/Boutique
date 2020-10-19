@@ -1,3 +1,5 @@
+///////*LOGIN PAGE STYLING *///////
+
 .login-container {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +12,7 @@
         font-size: 0.8em;
     }
 }
-
+/* REGISTER FORM - HIDDEN BY DEFAULT */
 .register {
     display: none;
 }

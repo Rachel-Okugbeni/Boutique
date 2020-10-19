@@ -1,4 +1,4 @@
-/* PRODUCT PAGE - DESCRIPTION/ADD TO BASKET */
+///////* PRODUCT PAGE - DESCRIPTION/ADD TO BASKET *///////
 .main-content {
     display: flex;
     flex-wrap: wrap;
@@ -9,15 +9,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin:20px;
+    margin-top:20px;
     padding: 20px;
     padding-bottom: 10px;
     border-radius: 5px;
     background-color: $primary-color;
 }
 .product-image {
-    width: 40vw;
-    min-width: 300px;
+    width: 45vw;
+    min-width: 280px;
     display: none;
     border-radius: 5px;
 }
@@ -25,6 +25,20 @@
 .product-description  {
     width: 300px;
     min-width: 200px;
+    padding-left: 5px;
+}
+
+/* CHANGE IMAGE */
+.prevImage,
+.nextImage {
+    cursor: pointer;
+    padding: 5px;
+    color: darken($primary-color, 10%);
+    transition: 0.6s ease;
+    &:hover {
+    color: $font-color;
+    opacity: 0.8;
+    }
 }
 
 /*QUANTITY SELECTOR*/

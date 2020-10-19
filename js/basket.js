@@ -29,19 +29,16 @@ function productTotal() {
 
 // ADDS ITEM TO BASKET ARRAY & UPDATE LOCAL STORAGE
 function addBasket() {
-         if (basket.length === 0) {
+         if (basket.length === 0 || (basket.find(x => x.name === item.name)) === undefined) {
             item.quantity = updatedQuantity
-            basket.push(item);
-         } else {
-             let i;
-             for (i=0; i < basket.length; i++) {
-                 if (basket.some(basket => basket.name === item.name)) {
-                    basket[i].quantity = basket[i].quantity + updatedQuantity
-                 } else {
-                    basket.push(item);
-                 }
-             }
-         }
+            basket.push(item)
+            } else {
+                for (let i=0; i < basket.length; i++) {
+                    if (basket[i].name === item.name) {
+                        basket[i].quantity = basket[i].quantity + updatedQuantity
+                    } 
+                }
+            }
     productTotal();
     basketCount();
     localStorage.setItem("savedBasket", JSON.stringify(basket));
@@ -50,6 +47,3 @@ function addBasket() {
 function basketCount() {
     document.getElementById('cartVal').innerHTML =  basket.reduce((val, {quantity}) => val + quantity, 0);
 }
-
-
-
