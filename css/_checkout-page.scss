@@ -11,6 +11,7 @@
 .basketList {
     padding: 20px;
     width: 55%;
+    min-width: 280px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -30,11 +31,11 @@
     }
     td {
        height: 8vh;
-        white-space: nowrap;
     }
     th,
     td {
         border-bottom: 1px solid lighten($font-color, 10%);
+       
     }
 }
 /* PRODUCT IMAGE IN BASKET */
