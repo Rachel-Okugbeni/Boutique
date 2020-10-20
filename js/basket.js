@@ -19,9 +19,8 @@ function updateValue() {
 
 //CONVERTS PRICE STRING TO INTEGER & ADDS KEY VALUE PAIR TO ITEM OBJECT
 function productTotal() {
-    const price = Number(item.price.replace(/[^0-9.-]+/g,""));
-    let i;
-    for (i = 0; i < basket.length; i++) {
+    for (let i = 0; i < basket.length; i++) {
+        let price = Number(basket[i].price.replace(/[^0-9.-]+/g,""));
         let totalPrice = price * basket[i].quantity;
         basket[i].totalPrice = totalPrice
     }    
