@@ -10,7 +10,9 @@ class Header extends HTMLElement {
             <div class="nav-links-right">
                 <ul>
                         <li><a href="/html/login.html">LOGIN</a></li>
-                        <li><a href="/html/checkout.html"><i class="fas fa-shopping-basket fa-lg"></i> <span id="cartVal">0</span></a></li>
+                </ul>
+                <ul>
+                        <li><a href="/html/checkout.html">BASKET  <i class="fas fa-shopping-basket fa-lg"></i> <span id="cartVal">0</span></a></li>
                     </ul>
             </div>`;
     }
@@ -20,7 +22,9 @@ class Banner extends HTMLElement {
     connectedCallback() {
         this.innerHTML = 
         `<div class="logo">
+        <ul>
             <li><a href="/index.html"><h1>Maison Fleurie</h1></a></li>
+        </ul>
         </div>`
     }
 }

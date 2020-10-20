@@ -43,7 +43,9 @@ main-footer {
 }
 
 .nav-links-right {
-  padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main-footer {
@@ -68,27 +70,27 @@ h1 {
 }
 
 /* GLOBAL LINK STYLING */
-li {
-  display: inline-block;
-  margin: 5px;
+ul {
+  margin: 15px 0;
+  padding: 5px;
+  padding-top: 5px;
 }
 
-a {
+ul li {
+  display: inline-block;
+}
+
+ul a {
+  padding: 5px;
   text-decoration: none;
   color: #72725A;
 }
 
-a:hover {
+ul a:hover {
   font-weight: bold;
 }
 
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   border-bottom: 1px solid #EDDCD2;
 }
 
@@ -306,6 +308,22 @@ select:focus {
   .categories {
     margin: 0;
   }
+  /* NARROW BASKET WIDTH AT CHECKOUT PAGE */
+  .product-image,
+  .product-description {
+    max-width: 250px;
+  }
+  /* REFORMAT CHECKOUT BLOCK - COUPON/ORDER TOTALS */
+  .orderTotal {
+    display: block !important;
+  }
+  /* REMOVES ITEM IMAGE ON SMALLER SCREENS */
+  .basketImg {
+    display: none;
+  }
+  .coupon {
+    border-bottom: 1px solid #8f8f71;
+  }
 }
 
 /* SMALL MOBILES */
@@ -313,6 +331,15 @@ select:focus {
   /* INCREASE BOTTOM PADDING TO ACCOMODATE FOOTER HEIGHT */
   .content-wrap {
     padding-bottom: 7rem;
+  }
+  .nav-links-left {
+    display: none;
+  }
+  .nav-links-right {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -365,7 +392,7 @@ select:focus {
 }
 
 .product-image {
-  min-width: 280px;
+  min-width: 200px;
   display: none;
   border-radius: 5px;
 }
@@ -426,6 +453,7 @@ select:focus {
 .basketList {
   padding: 20px;
   width: 55%;
+  min-width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,7 +482,6 @@ select:focus {
 
 .basketItems td {
   height: 8vh;
-  white-space: nowrap;
 }
 
 .basketItems th,
@@ -560,8 +587,7 @@ select:focus {
 
 .contact-form,
 .address {
-  min-width: 320px;
-  margin: 10px;
+  min-width: 280px;
   padding: 10px;
   text-align: left;
 }
