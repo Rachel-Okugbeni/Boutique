@@ -44,12 +44,14 @@ function createTable() {
       quantInput.setAttribute("type", "number");
       quantInput.setAttribute("class", "quantity");
       quantInput.setAttribute("value",`${basketItems[i].quantity}`);
+      quantInput.setAttribute("min", 1);
+      quantInput.setAttribute("max", 10);
       quantCell.appendChild(quantInput);
           // UPDATE QUANTITY & PRICE IN ARRAY
       quantInput.addEventListener("change", function(){
-        let itemName = (element) => nameCell.innerHTML
-        let itemIndex = basketItems.findIndex(itemName);
-        let price = Number(basketItems[itemIndex].price.replace(/[^0-9.-]+/g,""));
+        let itemName = nameCell.innerHTML;
+        let itemIndex = basketItems.findIndex(item => item.name === itemName);
+          let price = Number(basketItems[itemIndex].price.replace(/[^0-9.-]+/g,""));
         basketItems[itemIndex].quantity = +quantInput.value
         basketItems[itemIndex].totalPrice = +quantInput.value * price
        })
