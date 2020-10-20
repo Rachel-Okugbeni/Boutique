@@ -3,23 +3,48 @@ if (localStorage.length === 0) {
 }
 
 let basketItems = JSON.parse(localStorage.getItem("savedBasket"));
-let updateBasket = document.getElementById("update-btn")
-let orderTotal = basketItems.reduce((val, {totalPrice}) => val + totalPrice, 0);
+let updateBasket = document.getElementById("update-btn");
+let orderSubTotal = basketItems.reduce((val, {totalPrice}) => val + totalPrice, 0);
+let shipping = 2.5;
+let orderTotal = orderSubTotal + shipping;
+let couponInput = document.getElementById('couponCode');
+let appliedCode = localStorage.getItem("appliedCode") ? JSON.parse(localStorage.getItem("appliedCode")) : "";
+let couponCode = appliedCode.code;
+let discount = orderSubTotal * appliedCode.discount;
+let validCoupons = [
+  {
+    code: 'SAVE10',
+    discount: 0.1,
+  },
+  {
+    code: 'SAVE15',
+    discount: 0.15,
+  }
+];
 
+// ON WINDOW LOAD - CHECKS IF ANY CODES HAVE ALREADY BEEN APPLIED AT CHECKOUT 
+checkAppliedCodes();
+
+// DISPLAY ORDER SUBTOTAL
+document.getElementById('orderSubTotal').innerHTML = `£${orderSubTotal.toFixed(2)}`
+// DISPLAY SHIPPING
+document.getElementById('shipping').innerHTML = `£${shipping.toFixed(2)}`
 // DISPLAY ORDER TOTAL
 document.getElementById('orderTotal').innerHTML = `£${orderTotal.toFixed(2)}`
 
-// DISPLAY EMPTY BASKET MESSAGE IF BASKET ARRAY IS EMPTY
+
+// IF BASKET ARRAY IS EMPTY RUN SHOW EMPTY BASKET MESSAGE
+if (basketItems.length === 0) { 
+  emptyBasket()
+}
+
+// DISPLAY EMPTY BASKET MESSAGE
 function emptyBasket() {
   document.getElementById("basket").style.display = "none"
   document.getElementById("emptyBasket").style.display = "block"
 }
 
-if (basketItems.length === 0) { 
-  emptyBasket()
-}
-
-// DISPLAY BASKET ITEMS
+// DISPLAY BASKET ITEMS FROM ARRAY
 function createTable() {
   let popBasket = document.getElementById("basketItems")
   let i;
@@ -80,17 +105,13 @@ function createTable() {
       // ADD ROW TO TABLE
       popBasket.appendChild(row)
   }
-}
+};
 createTable();
 
-// SAVE CHANGES TO LOCAL STORAGE
+// SAVE QUANTITY CHANGES TO LOCAL STORAGE
 updateBasket.addEventListener("click", function(){
-  if (basketItems.length > 0) {
   localStorage.setItem("savedBasket", JSON.stringify(basketItems));
-  } else {
-    localStorage.setItem("savedBasket", JSON.stringify(basketItems));
-  }
-  window.location.reload();
+   window.location.reload();
 });
 
 //DISPLAY CHECKOUT MESSAGE
@@ -98,13 +119,63 @@ function checkout() {
   document.getElementById("basket").style.display = "none"
   document.getElementById("checkout").style.display = "block"
   basketItems = [];
+  discount = 0;
   localStorage.setItem("savedBasket", JSON.stringify(basketItems));
+  localStorage.setItem("appliedCode", "");
   setTimeout(function() {
     window.location.reload();
   }, 1000);
+};
 
+//UPDATES COUPON CODE VALUE ON INPUT CHANGE
+couponInput.addEventListener("change", function(code) {
+  couponCode = couponInput.value
+ });
+
+// FINDS COUPON CODE IN ARRAY AND APPLIES DISCOUNT
+function coupon() {
+  let msg = document.getElementById('coupon-msg');
+  //FIND INDEX OF COUPON CODE
+  let codeIndex = validCoupons.findIndex(code => code.code === couponCode);
+  if (appliedCode === "" || appliedCode.code != couponCode) {
+    if (codeIndex >= 0) { // CHECKS IF COUPON CODE IS VALID
+      localStorage.setItem("appliedCode", JSON.stringify(validCoupons[codeIndex]));
+      discount = orderSubTotal * validCoupons[codeIndex].discount
+      orderTotal = orderTotal - discount 
+      msg.innerHTML = 'Coupon applied successfully!';
+      updateTotals();
+      window.location.reload();
+      } else {
+        msg.style.color = 'red';
+        msg.innerHTML = 'Invalid code, please try again.';
+        };
+  } else {
+    msg.style.color = 'red';
+    msg.innerHTML = 'Code already applied'
+  }
 }
 
+function checkAppliedCodes() {
+  if (appliedCode != "") {
+    orderTotal = orderTotal - discount;
+      updateTotals();
+      document.getElementById('showCode').style.display = "block";
+      document.getElementById('appliedCode').innerHTML = `${appliedCode.code}`;
 
+  }
+}
+
+// REMOVES CODE AND UPDATES VALUES
+function removeCode() {
+  document.getElementById('showCode').style.display = "none";
+  localStorage.setItem("appliedCode","");
+  window.location.reload();
+}
+
+//UPDATES ORDER VALUES & DISCOUNT ON DOM
+function updateTotals() {
+  document.getElementById('orderTotal').innerHTML = `£${orderTotal.toFixed(2)}` //UPDATE ORDER TOTAL VALUE
+  document.getElementById('discount').innerHTML = `£${discount.toFixed(2)}` //UPDATE DISCOUNT VALUE
+}
 
 

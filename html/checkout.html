@@ -39,10 +39,22 @@
                     </table>                
                     <div class="orderTotal">
                         <div>
+                            <div class="coupon">
                             <nav><a href="/index.html">Continue Shopping</a></nav>
+
+                                <input type="text" id="couponCode" value="">
+                                <br>
+                                <button type="button" class="coupon-btn" id="coupon-btn" onclick="coupon()">ADD COUPON</button>
+                                <div class="coupon-msg" id="coupon-msg"></div>
+                            </div>
+
                         </div>
                         <div>
-                            <p>ORDER TOTAL: <span id="orderTotal">£0.00</span></p>
+                            <p class="totals">SUBTOTAL: <span class="currency" id="orderSubTotal">£0.00</span></p>
+                            <p class="totals">DISCOUNTS: <span class="currency" id="discount">£0.00</span></p>
+                            <p id="showCode" onclick="removeCode()"><span id="appliedCode"></span><i class="fas fa-times fa-xs"></i></p>
+                            <p class="totals">SHIPPING: <span class="currency" id="shipping">£0.00</span></p>
+                            <p class="finalTotal"> ORDER TOTAL: <span class="currency" id="orderTotal">£0.00</span></p>
                             <button type="button" class="update-btn" id="update-btn">UPDATE BASKET</button>
                             <button type="button" class="checkout-btn" onclick="checkout()">CHECKOUT</button>
                         </div>
