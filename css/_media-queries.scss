@@ -1,0 +1,73 @@
+/* 9. MEDIA QUERIES*/
+
+/* TABLET & SMALLER */
+@media only screen and (max-width: 768px) {
+/* GLOBAL */
+    /* HIDES HOME & CONTACT BUTTONS ON SMALLER SCREENS */
+    .nav-links-left {
+        display: none;
+    }
+    /* SPREADS LOGIN LINK & BASKET LINK TO EITHER SIDE OF SCREEN */
+    .nav-links-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+/* HOME PAGE */
+
+    /*NEWSLETTER SIGN UP SECTION*/
+    .newsletter {
+        padding-bottom: 20px;
+    }
+    /* SLIDE SHOW BANNER */
+    .banner {
+        display: none;
+    }
+    /* SWAP MARQUEE FOR STATIC BANNER */
+     .static-marquee-mobile {
+        display: block;
+    }
+    .marquee {
+        display: none;
+    }
+    /* REMOVE TOP MARGIN FROM CATEGORY SECTION */
+    .categories {
+        margin: 0;
+    }
+
+/*CHECKOUT PAGE */
+    /* LET BASKET TABLE FILL SCREEN WIDTH */
+    .basketList {
+        width: 95%;
+    }
+    /* REFORMAT CHECKOUT BLOCK - COUPON/ORDER TOTALS */
+    .orderTotal {
+        display: block !important;
+    }
+    .coupon {
+        border-bottom: 1px solid lighten($font-color, 10%);
+    } 
+
+/*PRODUCT PAGE */
+    .product-container {
+        padding: 10px;
+    }
+    .product-image-container {
+        width: 100%;
+    }   
+    .product-image,
+    .product-description {
+        max-width: 250px;
+    }
+    .product-image {
+       min-width: 100%;
+    }
+}
+
+/* SMALLER THAN TABLET */
+@media only screen and (max-width: 500px) {
+/* REMOVES ITEM IMAGE ON SMALLER SCREENS - ALLOWS ON TABLET */
+    .basketImg {
+        display: none;
+    } 
+}

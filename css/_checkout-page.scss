@@ -1,4 +1,4 @@
-//////*CHECKOUT PAGE STYLING *//////
+/* 6. CHECKOUT PAGE STYLING */
 
 /* EMPTY BASKET & CHECKOUT MESSAGE HIDDEN BY DEFAULT */
 .emptyBasket,
@@ -9,7 +9,6 @@
 
 /* ARRAY OF ITEMS ADDED TO BASKET */
 .basketList {
-    padding: 20px;
     width: 55%;
     min-width: 280px;
     display: flex;
@@ -52,7 +51,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 10px;
     .currency {
         font-weight: bold;
     }

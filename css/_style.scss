@@ -1,4 +1,15 @@
-//IMPORTS
+/* ///CONTENTS///
+1. FONT IMPORTS
+2. GLOBAL STYLING
+3. HOME PAGE STYLING
+4. CATEGORY PAGE STYLING
+5. PRODUCT PAGE STYLING
+6. CHECKOUT PAGE STYLING
+7. LOGIN PAGE STYLING
+8. CONTACT PAGE STYLING
+9. MEDIA QUERIES */
+
+/* 1. FONT IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap');
 
@@ -9,7 +20,8 @@ $font-color: #72725A;
 $san-serif-font: 'Raleway', sans-serif;
 $serif-font: 'Mr Bedfort', serif ;
 
-/*HOME PAGE & GLOBAL STYLING */
+
+/* 2. GLOBAL STYLING */
 body {
     background-color: $background;
     margin: 0;
@@ -21,7 +33,13 @@ body {
     color: $font-color;
     box-sizing: border-box;
 }
-
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+.content-wrap {
+    padding-bottom: 5rem;    /* Footer height */
+}
 /* HEADER & FOOTER STYLING */
 
 logo-header {
@@ -42,11 +60,6 @@ main-footer {
     font-size: 0.9em;
 
 }
-.nav-links-right {
-    display: flex;
-}
-
-
 main-footer {
   position: absolute;
   bottom: 0;
@@ -54,17 +67,15 @@ main-footer {
   height: auto;
 }
 
+/* LOGIN / BASKET LINKS */
+.nav-links-right {
+    display: flex;
+}
+
+/* HEADING (LOGO) */
 h1 {
     font-family: $serif-font;
 }
-
-.page-container {
-    position: relative;
-    min-height: 100vh;
-}
-.content-wrap {
-    padding-bottom: 5rem;    /* Footer height */
-  }
 
 /* GLOBAL LINK STYLING */
 ul {
@@ -85,7 +96,7 @@ ul {
 }
 .navbar {
     border-bottom: 1px solid $primary-color;
- }
+}
 
 /* GLOBAL BUTTON STYLING */
 button {
@@ -100,7 +111,7 @@ button {
     }
 }
 
-/*GLOBAL FORM STYLING */
+/* GLOBAL FORM STYLING */
 form {
     display: flex;
     justify-content: center;
@@ -126,7 +137,7 @@ select:focus {
     background-color: $primary-color;
 }
 
-//////////* HOME PAGE STYLING *///////
+/* 3. HOME PAGE STYLING */
 
 /* SCROLLING MARQUEE */
 .marquee,
@@ -159,7 +170,7 @@ select:focus {
     margin: 20px 0;
 }
 
-/*Slideshow image */
+/* SLIDESHOW IMAGE */
 .banner-slide {
     display: none;
 }
@@ -167,23 +178,23 @@ select:focus {
     border-radius: 5px;
 }
 
-/* Fading animation */
+/* FADING ANIMATION */
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 2s;
     animation-name: fade;
     animation-duration: 2s;
-  }
+}
   
   @-webkit-keyframes fade {
     from {opacity: .5}
     to {opacity: 1}
-  }
+}
   
   @keyframes fade {
     from {opacity: .5}
     to {opacity: 1}
-  }
+}
 
 /* CATEGORY LINKS */
 .categories {
@@ -207,6 +218,8 @@ select:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-position: center;
     margin: 10px 0;
     h2 {
         background-color: $background;
@@ -217,85 +230,16 @@ select:focus {
     }
 }
 
+/* BACKGROUND IMAGES TO CATEGORY LINKS */
 #jewellery-all {
     background-image: url('/assets/jewellery/Bracelet/feather bracelet/bangle.bracelet.with.feathers-default.jpg');
-    background-size: cover;
-    background-position: center;
 }
-
 #accessories {
     background-image: url('/assets/bags/Pink Bag/light.pink.purse-default.jpg');
-    background-size: cover;
-    background-position: center;
-    
 }
 #mens {
     background-image: url('/assets/jewellery/Mens/Anchor Bracelet - Black/anchor.bracelet.black-default.jpg');
-    background-size: cover;
-    background-position: center;
-
 }
 #other {
     background-image: url('/assets/pins/Rainbow/rainbow.hard.enamel.lapel.pin.jpg');
-    background-size: cover;
-    background-position: center;
-
-}
-
-/* TABLET & SMALLER */
-@media only screen and (max-width: 768px) {
-    /*NEWSLETTER SIGN UP SECTION */
-    .newsletter {
-        padding-bottom: 20px;
-    }
-    /* SLIDE SHOW */
-    .banner {
-        display: none;
-    }
-    /* SWAP MARQUEE FOR STATIC BANNER */
-     .static-marquee-mobile {
-        display: block;
-    }
-    .marquee {
-        display: none;
-    }
-    /* REMOVE TOP MARGIN FROM CATEGORY SECTION */
-    .categories {
-        margin: 0;
-    }
-    /* NARROW BASKET WIDTH AT CHECKOUT PAGE */
-    .product-image,
-    .product-description {
-        max-width: 250px;
-    }
-    /* REFORMAT CHECKOUT BLOCK - COUPON/ORDER TOTALS */
-    .orderTotal {
-        display: block !important;
-    }
-    /* REMOVES ITEM IMAGE ON SMALLER SCREENS */
-    .basketImg {
-        display: none;
-    }   
-    .coupon {
-        border-bottom: 1px solid lighten($font-color, 10%);
-    } 
-}
-
-/* SMALL MOBILES */
-@media only screen and (max-width: 375px) {
-    /* INCREASE BOTTOM PADDING TO ACCOMODATE FOOTER HEIGHT */
-    .content-wrap {
-        padding-bottom: 7rem;
-      }
-      // HIDES HOME & CONTACT BUTTONS ON SMALLER SCREENS
-    .nav-links-left {
-        display: none;
-    }
-    // SPREADS LOGIN LINK & BASKET LINK TO EITHER SIDE OF SCREEN
-    .nav-links-right {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-
 }

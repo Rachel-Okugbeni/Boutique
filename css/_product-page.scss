@@ -1,4 +1,5 @@
-///////* PRODUCT PAGE - DESCRIPTION/ADD TO BASKET *///////
+/* 5. PRODUCT PAGE - DESCRIPTION/ADD TO BASKET */
+
 .main-content {
     display: flex;
     flex-wrap: wrap;
@@ -9,16 +10,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top:20px;
+    margin-top: 20px;
     padding: 20px;
     padding-bottom: 10px;
     border-radius: 5px;
     background-color: $primary-color;
 }
+
 .product-image {
     min-width: 200px;
+    max-width: 600px;
     display: none;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px $font-color;
 }
 
 .product-description  {

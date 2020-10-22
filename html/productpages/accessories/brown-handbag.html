@@ -20,8 +20,8 @@
         <div class="main-content">
             <div class="product-container">
                 <div class="product-image-container">
-                    <img class="product-image" id="default" src="/assets/bags/Brown-Black Bag/brown.purse-default.jpg">
-                    <img class="product-image" id="img2" src="/assets/bags/Brown-Black Bag/brown.purse-closeup.jpg">
+                    <img class="product-image" id="default" onclick="changeImage(1)" src="/assets/bags/Brown-Black Bag/brown.purse-default.jpg" alt="Dark brown leather handbag with black jewelled clasp">
+                    <img class="product-image" id="img2" onclick="changeImage(1)" src="/assets/bags/Brown-Black Bag/brown.purse-closeup.jpg" alt="Woman wearing dark brown leather handbag with black jewelled clasp">
                     <div class="slideshow-buttons">
                         <a class="prevImage" onclick="changeImage(-1)"><i class="fas fa-angle-left"></i></a>
                         <a class="nextImage" onclick="changeImage(1)"><i class="fas fa-angle-right"></i></a>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="product-description">
                     <h2 class="product-name">Brown Handbag</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo quod rerum sunt nihil quaerat qui dolores a minima dolor ullam in nobis aut, enim cupiditate quasi nemo vel voluptas!</p>
+                    <p>Dark brown leather handbag with adjustable shoulder strap and black jewelled clasp</p>
                     <h4 class="price">£20.00</h4>
                     <label for="quantity">Quantity</label>
                     <input class="quantity" id="quantity" name="quantity" type="number" placeholder="1" min="1" max="10" required onchange="updateValue()">

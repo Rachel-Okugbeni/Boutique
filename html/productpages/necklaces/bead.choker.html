@@ -20,8 +20,8 @@
         <div class="main-content">
             <div class="product-container">
                 <div class="product-image-container">
-                    <img class="product-image" id="default" src="/assets/jewellery/Necklace/Bead Choker/choker.with.bead-default.jpg">
-                    <img class="product-image" id="img2" src="/assets/jewellery/Necklace/Bead Choker/black.choker.with.bead-closeup.jpg">
+                    <img class="product-image" id="default" onclick="changeImage(1)" src="/assets/jewellery/Necklace/Bead Choker/choker.with.bead-default.jpg" alt="Black waxed cotton choker necklace with single silver bead">
+                    <img class="product-image" id="img2" onclick="changeImage(1)" src="/assets/jewellery/Necklace/Bead Choker/black.choker.with.bead-closeup.jpg" alt="Woman wearing black waxed cotton choker necklace with single silver bead">
                     <div class="slideshow-buttons">
                         <a class="prevImage" onclick="changeImage(-1)"><i class="fas fa-angle-left"></i></a>
                         <a class="nextImage" onclick="changeImage(1)"><i class="fas fa-angle-right"></i></a>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="product-description">
                     <h2 class="product-name">Bead Choker</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id explicabo quod rerum sunt nihil quaerat qui dolores a minima dolor ullam in nobis aut, enim cupiditate quasi nemo vel voluptas!</p>
+                    <p>Black waxed cotton choker necklace with single silver bead and silver adjustable clasp</p>
                     <h4 class="price">£8.00</h4>
                     <label for="quantity">Quantity</label>
                     <input class="quantity" id="quantity" name="quantity" type="number" placeholder="1" min="1" max="10" required onchange="updateValue()">

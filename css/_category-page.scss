@@ -1,3 +1,5 @@
+/* 4. CATEGORY PAGE STYLING*/
+
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -9,6 +11,7 @@
     line-height: 10px;
     img {
         border-radius: 5px;
+        box-shadow: 2px 2px 5px $font-color;
     }
  }
 
