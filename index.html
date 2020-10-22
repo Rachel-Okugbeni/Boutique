@@ -29,45 +29,46 @@
                 <div class="slideshow-container">
                     <!-- Slideshow images -->
                     <div class="banner-slide fade">
-                        <img class="banner-img" id="img1" src="assets/banner/stacked-bangle.jpg">
+                        <img class="banner-img" id="img1" src="assets/banner/stacked-bangle.jpg" alt="stacked bangle on wrist">
                     </div>
                     <div class="banner-slide fade">
-                        <img class="banner-img" id="img2"  src="assets/banner/pexels.godisable.jacob.1191531.jpg">
+                        <img class="banner-img" id="img2"  src="assets/banner/pexels.godisable.jacob.1191531.jpg" alt="silver and gold bangles with charms on wrist">
                     </div>
                     <div class="banner-slide fade">
-                        <img class="banner-img" id="img3"  src="assets/banner/pexels.jonas.svidras.553236.jpg">
+                        <img class="banner-img" id="img3"  src="assets/banner/pexels.jonas.svidras.553236.jpg" alt="3 beaded bracelets on mans wrist">
                     </div>          
                 </div>  
             </div>
             <nav>
-                <div class="categories">
-                    <a href="/html/categorypages/category-page-jewellery.html">
-                        <div class="category-link" id="jewellery-all">
+                <ul class="categories">
+                    <li>
+                        <a href="/html/categorypages/category-page-jewellery.html" class="category-link" id="jewellery-all">
                             <h2>JEWELLERY</h2>
-                        </div>
-                    </a>
-                    <a href="/html/categorypages/category-page-mens.html">
-                        <div class="category-link" id="mens">
-                            <h2>MENS</h2>
-                        </div>
-                    </a>
-                    <a href="/html/categorypages/category-page-accessories.html">
-                        <div class="category-link"  id="accessories">
-                            <h2>ACCESSORIES</h2>
-                        </div>   
-                    </a>
-                    <a href="/html/categorypages/category-page-other.html">
-                        <div class="category-link"  id="other">
-                            <h2>OTHER</h2>
-                        </div> 
-                    </a>
-                </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/html/categorypages/category-page-mens.html" class="category-link" id="mens">
+                                <h2>MENS</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/html/categorypages/category-page-accessories.html" class="category-link"  id="accessories">
+                                <h2>ACCESSORIES</h2>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/html/categorypages/category-page-other.html" class="category-link"  id="other">
+                                <h2>OTHER</h2>
+                        </a>
+                    </li>
+                </ul>
         </nav>
             <div class="newsletter">
                 <h3>SUBSCRIBE TO OUR NEWSLETTER AND GET 15% OFF YOUR FIRST ORDER!</h3>
                 <form class="form" id="newsletter-form">
-                        <input type="email" name="email" id="newsletter-email" aria-required="true" placeholder="EMAIL">
-                        <button type="submit" name="submit" class="form-btn" id="newsletter-subscribe">SUBSCRIBE</button>
+                    <label for="newsletter-email" class="visuallyhidden">EMAIL</label>
+                    <input type="email" name="email" id="newsletter-email" aria-required="true" placeholder="EMAIL">
+                    <button type="submit" name="submit" class="form-btn" id="newsletter-subscribe">SUBSCRIBE</button>
                 </form>
             </div>
         </div>

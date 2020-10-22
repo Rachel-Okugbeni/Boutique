@@ -20,15 +20,19 @@
                     <fieldset>
                         <legend><h2>CONTACT</h2></legend>
                         <div class="row">
+                            <label for="contact-name" class="visuallyhidden">YOUR NAME</label>
                             <input type="text" name="name" class="contact-input" id="contact-name" placeholder="YOUR NAME" required>
                         </div>
                         <div class="row">
+                            <label for="contact-email" class="visuallyhidden">EMAIL</label>
                             <input type="text" name="email" class="contact-input" id="contact-email" placeholder="YOUR EMAIL" required>
                         </div>
                         <div class="row">
+                            <label for="contact-phone" class="visuallyhidden">PHONE NUMBER (optional)</label>
                             <input type="text" name="phone" class="contact-input" id="contact-phone" placeholder="PHONE NUMBER (optional)">
                         </div>
                         <div class="row">
+                            <label for="enquiry" class="visuallyhidden">ENQUIRY</label>
                             <select name="Enquiry"  id="enquiry">
                                 <option value="order-issue">THERE'S A PROBLEM WITH MY ORDER</option>
                                 <option value="refund">I NEED A REFUND</option>
@@ -37,6 +41,7 @@
                             </select>
                         </div>
                         <div class="row">
+                            <label for="contact-msg" class="visuallyhidden">MESSAGE</label>
                             <textarea name="msg" class="contact-input" id="contact-msg" cols="35" rows="5"></textarea>
                         </div>
                         <button type="submit" name="submit" class="form-btn" id="contact-submit">SEND</button>

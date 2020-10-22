@@ -20,7 +20,7 @@ body {
   font-weight: 300;
   font-size: 16px;
   text-align: center;
-  color: #72725A;
+  color: #5a5a47;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -96,7 +96,7 @@ ul li {
 ul a {
   padding: 5px;
   text-decoration: none;
-  color: #72725A;
+  color: #5a5a47;
 }
 
 ul a:hover {
@@ -114,7 +114,7 @@ button {
   margin: 5px;
   border-radius: 5px;
   border: 1px solid transparent;
-  color: #72725A;
+  color: #5a5a47;
 }
 
 button:hover {
@@ -152,6 +152,18 @@ fieldset {
 input:focus,
 select:focus {
   background-color: #EDDCD2;
+}
+
+/* VISUALLY HIDE FORM LABELS */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 /* 3. HOME PAGE STYLING */
@@ -246,7 +258,7 @@ select:focus {
 
 .categories a {
   text-decoration: none;
-  color: #72725A;
+  color: #5a5a47;
 }
 
 .category-link {
@@ -316,8 +328,8 @@ select:focus {
 
 .product img {
   border-radius: 5px;
-  -webkit-box-shadow: 2px 2px 5px #72725A;
-          box-shadow: 2px 2px 5px #72725A;
+  -webkit-box-shadow: 2px 2px 5px #5a5a47;
+          box-shadow: 2px 2px 5px #5a5a47;
 }
 
 /* 5. PRODUCT PAGE - DESCRIPTION/ADD TO BASKET */
@@ -353,8 +365,8 @@ select:focus {
   max-width: 600px;
   display: none;
   border-radius: 5px;
-  -webkit-box-shadow: 2px 2px 5px #72725A;
-          box-shadow: 2px 2px 5px #72725A;
+  -webkit-box-shadow: 2px 2px 5px #5a5a47;
+          box-shadow: 2px 2px 5px #5a5a47;
 }
 
 .product-description {
@@ -375,7 +387,7 @@ select:focus {
 
 .prevImage:hover,
 .nextImage:hover {
-  color: #72725A;
+  color: #5a5a47;
   opacity: 0.8;
 }
 
@@ -446,7 +458,7 @@ select:focus {
 
 .basketItems th,
 .basketItems td {
-  border-bottom: 1px solid #8f8f71;
+  border-bottom: 1px solid #77775d;
 }
 
 /* PRODUCT IMAGE IN BASKET */
@@ -479,8 +491,8 @@ select:focus {
 }
 
 .finalTotal {
-  border-top: 1px solid #8f8f71;
-  border-bottom: 1px solid #8f8f71;
+  border-top: 1px solid #77775d;
+  border-bottom: 1px solid #77775d;
   padding: 5px;
 }
 
@@ -598,7 +610,7 @@ select:focus {
     display: block !important;
   }
   .coupon {
-    border-bottom: 1px solid #8f8f71;
+    border-bottom: 1px solid #77775d;
   }
   /*PRODUCT PAGE */
   .product-container {

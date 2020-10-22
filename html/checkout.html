@@ -19,16 +19,22 @@
         <nav-bar></nav-bar>
         <div class="basket-container">
             <div class="emptyBasket" id="emptyBasket">
-                    <h3>Your basket is empty!</h3>
-                    <nav><a href="/index.html">Continue Shopping</a></nav>
+                <h2>Your basket is empty!</h2>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/index.html">Continue Shopping</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <div class="checkout" id="checkout">
-                <h3>Thank You For Your Order!</h3>
+                <h2>Thank You For Your Order!</h2>
              </div>
             <div class="basket" id="basket">
                 <div class="basketList">
                     <table class="basketItems" id="basketItems">
-                        <thead><h3>YOUR BASKET</h3></thead>
+                        <thead><h2>YOUR BASKET</h2></thead>
                             <tr>
                                 <th colspan="2">ITEM</th>                  
                                 <th>PRICE</th>
@@ -45,12 +51,12 @@
                                     <a href="/index.html">Continue Shopping</a>
                                 </ul>
                             </nav>
+                                <label for="couponCode" class="visuallyhidden">COUPON CODE</label>
                                 <input type="text" id="couponCode" value="">
                                 <br>
                                 <button type="button" class="coupon-btn" id="coupon-btn" onclick="coupon()">ADD COUPON</button>
                                 <div class="coupon-msg" id="coupon-msg"></div>
                             </div>
-
                         </div>
                         <div>
                             <p class="totals">SUBTOTAL: <span class="currency" id="orderSubTotal">£0.00</span></p>

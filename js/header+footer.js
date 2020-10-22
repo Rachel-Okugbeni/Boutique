@@ -22,9 +22,11 @@ class Banner extends HTMLElement {
     connectedCallback() {
         this.innerHTML = 
         `<div class="logo">
-        <ul>
-            <li><a href="/index.html"><h1>Maison Fleurie</h1></a></li>
-        </ul>
+            <ul>
+                <li>
+                <a href="/index.html"><h1>Maison Fleurie</h1></a>
+                </li>
+            </ul>
         </div>`
     }
 }
@@ -35,10 +37,10 @@ class Footer extends HTMLElement {
         this.innerHTML = 
         `<div class="footer-links">
                 <ul>
-                    <li><a href="/html/contact.html">Contact</a></li>|
-                    <li><a href="#">FAQ</a></li>|
-                    <li><a href="#">Delivery & Payment Info</a></li>|
-                    <li><a href="#">Care Instructions</a></li>|
+                    <li><a href="/html/contact.html">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Delivery & Payment Info</a></li>
+                    <li><a href="#">Care Instructions</a></li>
                     <li><a href="#">Careers</a></li>
                 </ul>
         </div>`

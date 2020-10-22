@@ -16,7 +16,7 @@
 //VARIABLES
 $background: #F0EFEB;
 $primary-color: #EDDCD2;
-$font-color: #72725A;
+$font-color: #5a5a47;
 $san-serif-font: 'Raleway', sans-serif;
 $serif-font: 'Mr Bedfort', serif ;
 
@@ -49,8 +49,8 @@ logo-header {
     align-items: center;
     justify-content: center;
     margin: 5px, 0;
-
 }
+
 
 main-header,
 main-footer {
@@ -58,8 +58,8 @@ main-footer {
     display: flex;
     justify-content: space-between;
     font-size: 0.9em;
-
 }
+
 main-footer {
   position: absolute;
   bottom: 0;
@@ -89,6 +89,7 @@ ul {
         padding: 5px;
         text-decoration: none;
         color: $font-color;
+
         &:hover {
             font-weight: bold; 
         }
@@ -136,6 +137,17 @@ input:focus,
 select:focus {
     background-color: $primary-color;
 }
+/* VISUALLY HIDE FORM LABELS */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
 
 /* 3. HOME PAGE STYLING */
 
