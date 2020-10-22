@@ -35,7 +35,7 @@ class Footer extends HTMLElement {
         this.innerHTML = 
         `<div class="footer-links">
                 <ul>
-                    <li><a href="html/contact.html">Contact</a></li>|
+                    <li><a href="/html/contact.html">Contact</a></li>|
                     <li><a href="#">FAQ</a></li>|
                     <li><a href="#">Delivery & Payment Info</a></li>|
                     <li><a href="#">Care Instructions</a></li>|
